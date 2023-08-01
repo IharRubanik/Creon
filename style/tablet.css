@@ -339,11 +339,22 @@
     display: flex;
     justify-content: space-between;
   }
+  .profiting .video-container::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 947px;
+    height: 485px;
+    border-radius: 6px;
+    background: linear-gradient(180deg, #3d8bff 0%, #ab23ff 100%);
+    mix-blend-mode: soft-light;
+  }
   .profiting .video-container .profiting__video {
     width: 947px;
     height: 485px;
     -o-object-fit: cover;
        object-fit: cover;
+    border-radius: 6px;
   }
   .profiting .video-container .profiting__text {
     width: 451px;

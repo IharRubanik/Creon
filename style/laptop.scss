@@ -166,9 +166,7 @@ html {
     box-shadow: inset 0.26vw 0.26vw 0.26vw 0.26vw#AB23FF;
     border-radius: 0.104vw;
   }
-
 }
-
 
 .wrapper {
   position: relative;
@@ -459,10 +457,23 @@ html {
     margin: 4.323vw 0 0 0;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 49.323vw;
+      height: 25.26vw;
+      border-radius: 0.313vw;
+      background: linear-gradient(180deg, #3d8bff 0%, #ab23ff 100%);
+      mix-blend-mode: soft-light;
+    }
     .profiting__video {
       width: 49.323vw;
       height: 25.26vw;
       object-fit: cover;
+      border-radius: 0.313vw;
     }
     .profiting__text {
       width: 23.49vw;
