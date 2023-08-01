@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/fonts.css">
+    <link rel="stylesheet" href="./style/laptop.css">
+    <!-- <link rel="stylesheet" href="./style/tablet.css">
+    <link rel="stylesheet" href="./style/tabletvertical.css">
+    <link rel="stylesheet" href="./style/mobile.css"> -->
+    <title>Creon</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="header">
+            <a href="#" class="header__logo">
+                <svg class="logo" width="140" height="39" viewBox="0 0 140 39" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_508_41)">
+                        <path
+                            d="M62.2542 26.0729C61.7416 26.6077 61.2099 27.0871 60.6593 27.5112C60.1087 27.9353 59.5011 28.3041 58.8365 28.6176C58.1909 28.9126 57.4789 29.1339 56.7004 29.2814C55.9219 29.4474 55.0485 29.5304 54.0802 29.5304C52.6181 29.5304 51.2605 29.2722 50.0074 28.7559C48.7542 28.2396 47.6719 27.5389 46.7605 26.6538C45.8491 25.7502 45.1371 24.6899 44.6245 23.4729C44.1118 22.2559 43.8555 20.9559 43.8555 19.5729V19.5176C43.8555 18.1346 44.1118 16.8438 44.6245 15.6452C45.1371 14.4282 45.8491 13.3679 46.7605 12.4644C47.6719 11.5424 48.7637 10.8233 50.0359 10.3069C51.308 9.7722 52.7131 9.50482 54.2511 9.50482C55.1814 9.50482 56.0264 9.57858 56.7859 9.7261C57.5644 9.87362 58.2669 10.0765 58.8935 10.3346C59.5201 10.5928 60.0992 10.9062 60.6308 11.275C61.1625 11.6438 61.6561 12.0495 62.1118 12.4921L59.3207 15.6176C58.5422 14.9353 57.7447 14.4006 56.9283 14.0133C56.1308 13.6261 55.2289 13.4325 54.2226 13.4325C53.3871 13.4325 52.6086 13.5892 51.8871 13.9027C51.1846 14.2162 50.577 14.6495 50.0643 15.2027C49.5517 15.7559 49.1529 16.4013 48.8681 17.1389C48.5833 17.858 48.4409 18.6325 48.4409 19.4623V19.5176C48.4409 20.3474 48.5833 21.1311 48.8681 21.8687C49.1529 22.6062 49.5422 23.2516 50.0359 23.8048C50.5485 24.358 51.1561 24.8006 51.8586 25.1325C52.5802 25.446 53.3681 25.6027 54.2226 25.6027C55.3618 25.6027 56.3207 25.3999 57.0992 24.9942C57.8966 24.5885 58.6846 24.0353 59.4631 23.3346L62.2542 26.0729Z"
+                            fill="white" />
+                        <path
+                            d="M81.0028 29.1984H75.8762L71.604 23.0027H68.1578V29.1984H63.7717V9.83674H72.8857C75.2591 9.83674 77.1009 10.3991 78.411 11.524C79.7401 12.6488 80.4047 14.2162 80.4047 16.2261V16.2814C80.4047 17.8488 80.0059 19.1304 79.2085 20.1261C78.43 21.1034 77.4047 21.8226 76.1325 22.2835L81.0028 29.1984ZM75.9616 16.5027V16.4474C75.9616 15.5254 75.6578 14.8339 75.0502 14.3729C74.4426 13.9119 73.5977 13.6814 72.5154 13.6814H68.1578V19.241H72.6009C73.6831 19.241 74.5091 18.9921 75.0787 18.4942C75.6673 17.9963 75.9616 17.3325 75.9616 16.5027Z"
+                            fill="white" />
+                        <path
+                            d="M97.5405 29.1984H82.3601V9.83674H97.3981V13.6261H86.7177V17.5538H96.1164V21.3431H86.7177V25.4091H97.5405V29.1984Z"
+                            fill="white" />
+                        <path
+                            d="M119.753 19.5176C119.753 20.9006 119.488 22.2006 118.956 23.4176C118.424 24.6162 117.684 25.6765 116.734 26.5984C115.804 27.502 114.684 28.2211 113.374 28.7559C112.083 29.2722 110.668 29.5304 109.13 29.5304C107.592 29.5304 106.178 29.2722 104.886 28.7559C103.595 28.2211 102.475 27.5112 101.526 26.6261C100.595 25.7226 99.8642 24.6715 99.3326 23.4729C98.8199 22.2559 98.5636 20.9559 98.5636 19.5729V19.5176C98.5636 18.1346 98.8294 16.8438 99.361 15.6452C99.8927 14.4282 100.624 13.3679 101.554 12.4644C102.503 11.5424 103.624 10.8233 104.915 10.3069C106.225 9.7722 107.649 9.50482 109.187 9.50482C110.725 9.50482 112.14 9.7722 113.431 10.3069C114.722 10.8233 115.833 11.5332 116.763 12.4367C117.712 13.3218 118.443 14.3729 118.956 15.5899C119.488 16.7885 119.753 18.0793 119.753 19.4623V19.5176ZM115.168 19.5729V19.5176C115.168 18.6878 115.016 17.9041 114.712 17.1665C114.428 16.4289 114.01 15.7835 113.459 15.2304C112.928 14.6772 112.291 14.2438 111.551 13.9304C110.81 13.5984 110.003 13.4325 109.13 13.4325C108.238 13.4325 107.421 13.5892 106.681 13.9027C105.959 14.2162 105.333 14.6495 104.801 15.2027C104.288 15.7559 103.88 16.4013 103.576 17.1389C103.291 17.858 103.149 18.6325 103.149 19.4623V19.5176C103.149 20.3474 103.291 21.1311 103.576 21.8687C103.88 22.6062 104.298 23.2516 104.829 23.8048C105.38 24.358 106.016 24.8006 106.738 25.1325C107.478 25.446 108.295 25.6027 109.187 25.6027C110.06 25.6027 110.867 25.446 111.608 25.1325C112.348 24.819 112.975 24.3857 113.488 23.8325C114.019 23.2793 114.428 22.6431 114.712 21.924C115.016 21.1864 115.168 20.4027 115.168 19.5729Z"
+                            fill="white" />
+                        <path
+                            d="M139.366 29.1984H135.635L125.98 16.8899V29.1984H121.651V9.83674H125.695L135.037 21.758V9.83674H139.366V29.1984Z"
+                            fill="white" />
+                        <path
+                            d="M9.828 36.8535L12.4366 39L11.4515 37.2052C9.89741 34.3736 9.08832 31.2513 9.08832 28.0855V17.9018C9.08832 17.0122 9.24574 16.1284 9.55454 15.2845C10.4187 12.9227 12.845 11.3296 15.5778 11.3296H16.4704C19.2032 11.3296 21.6295 12.9227 22.4936 15.2845C22.8024 16.1284 22.9599 17.0122 22.9599 17.9018V28.0855C22.9599 31.2513 22.1508 34.3736 20.5967 37.2052L19.6115 39L22.2202 36.8535C25.3595 34.2704 27.6311 30.9298 28.7717 27.2188L32.0482 16.5587H30.374V14.5056C30.374 10.6585 28.6964 6.96894 25.7103 4.2486L24.5979 3.23526C22.324 1.16376 19.2399 0 16.0241 0C12.8083 0 9.72415 1.16378 7.4502 3.23531L6.3379 4.2486C3.35176 6.96894 1.67416 10.6585 1.67416 14.5056V16.5587H0L3.27649 27.2188C4.41711 30.9298 6.68869 34.2704 9.828 36.8535Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_508_41">
+                            <rect width="140" height="39" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+            <div class="header__right-block">
+                <ul class="header__nav">
+                    <li class="nav-item"><a href="#">Creon Pass</a></li>
+                    <li class="nav-item"><a href="#">Token</a></li>
+                    <li class="nav-item"><a href="#">AI Income</a></li>
+                    <li class="nav-item"> <a href="#">AI Launchpad</a></li>
+                </ul>
+                <button class="header__connect">Connect</button>
+            </div>
+        </section>
+        <main class="main">
+            <video class="main__bg" autoplay loop playsinline muted>
+                <source src="./img/main/main-bg.mp4" type="video/mp4">
+            </video>
+            <img src="./img/main/video-blur.png" alt="" class="video-blur">
+            <h2 class="main__title">Empowering AI-Crypto Innovations and Integrating AI Tools into crypto.</h2>
+            <span class="main__subtitle">Creon «Create On» confidential AI Tools for granting access through NFTs.
+                <img class="border" src="./img/main/border.svg" alt="">
+            </span>
+        </main>
+        <section class="mission">
+            <img src="./img/mission/mission-bg.png" alt="" class="mission-bg">
+            <h3 class="mission__title">
+                our mission is to provide unique, confidential AI-based tools, to which you will gain
+                <span>
+                    lifetime access through NFT tokens and our CREON token.
+                </span>
+            </h3>
+            <div class="mission__accordion">
+                <div class="item">
+                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"
+                        fill="none">
+                        <path d="M1 1L7 7L13 1" stroke="white" stroke-width="1.5" />
+                    </svg>
+                    <div class="img-container">
+                        <img src="./img/mission/profitable-icon.svg" alt="" class="polygon-icon">
+                        <img src="./img/mission/border-icon.png" alt="" class="border-icon">
+                        <svg class="mission-icon" width="68" height="76" viewBox="0 0 68 76" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="polygon"
+                                d="M0 22.5204C0 20.3467 1.1756 18.343 3.07307 17.2827L31.0731 1.63563C32.892 0.619181 35.108 0.619184 36.9269 1.63564L64.9269 17.2827C66.8244 18.343 68 20.3467 68 22.5204V53.4796C68 55.6533 66.8244 57.657 64.9269 58.7173L36.9269 74.3644C35.108 75.3808 32.892 75.3808 31.0731 74.3644L3.07307 58.7173C1.1756 57.657 0 55.6533 0 53.4796V22.5204Z"
+                                fill="#13171D" />
+                            <path
+                                d="M6 26.0366C6 23.8543 7.18486 21.8441 9.0941 20.7872L31.0941 8.60862C32.9021 7.60777 35.0979 7.60777 36.9059 8.60862L58.9059 20.7872C60.8151 21.8441 62 23.8543 62 26.0366V49.9634C62 52.1457 60.8151 54.1559 58.9059 55.2128L36.9059 67.3914C35.0979 68.3922 32.9021 68.3922 31.0941 67.3914L9.0941 55.2128C7.18486 54.1559 6 52.1457 6 49.9634V26.0366Z"
+                                fill="#2a2e33" />
+                        </svg>
+                    </div>
+                    <div class="text-container">
+
+                        <h4 class="accordion-title">Profitable AI Business
+                            Opportunities</h4>
+                        <p class="accordion-description">At Creon, we deliver a unique opportunity to benefit from a
+                            real AI-based business that generates profits. We believe that through our solutions, every
+                            investor will be able to reap the benefits of the latest achievements in the field of
+                            artificial intelligence.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"
+                        fill="none">
+                        <path d="M1 1L7 7L13 1" stroke="white" stroke-width="1.5" />
+                    </svg>
+                    <div class="img-container">
+                        <img src="./img/mission/transparent-icon.svg" alt="" class="polygon-icon">
+                        <img src="./img/mission/border-icon.png" alt="" class="border-icon">
+                        <svg class="mission-icon" width="68" height="76" viewBox="0 0 68 76" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="polygon"
+                                d="M0 22.5204C0 20.3467 1.1756 18.343 3.07307 17.2827L31.0731 1.63563C32.892 0.619181 35.108 0.619184 36.9269 1.63564L64.9269 17.2827C66.8244 18.343 68 20.3467 68 22.5204V53.4796C68 55.6533 66.8244 57.657 64.9269 58.7173L36.9269 74.3644C35.108 75.3808 32.892 75.3808 31.0731 74.3644L3.07307 58.7173C1.1756 57.657 0 55.6533 0 53.4796V22.5204Z"
+                                fill="#13171D" />
+                            <path
+                                d="M6 26.0366C6 23.8543 7.18486 21.8441 9.0941 20.7872L31.0941 8.60862C32.9021 7.60777 35.0979 7.60777 36.9059 8.60862L58.9059 20.7872C60.8151 21.8441 62 23.8543 62 26.0366V49.9634C62 52.1457 60.8151 54.1559 58.9059 55.2128L36.9059 67.3914C35.0979 68.3922 32.9021 68.3922 31.0941 67.3914L9.0941 55.2128C7.18486 54.1559 6 52.1457 6 49.9634V26.0366Z"
+                                fill="#2a2e33" />
+                        </svg>
+                    </div>
+                    <div class="text-container">
+                        <h4 class="accordion-title">Transparent & Fair Decentralized Earnings</h4>
+                        <p class="accordion-description">At Creon, we deliver a unique opportunity to benefit from a
+                            real AI-based business that generates profits. We believe that through our solutions, every
+                            investor will be able to reap the benefits of the latest achievements in the field of
+                            artificial intelligence.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"
+                        fill="none">
+                        <path d="M1 1L7 7L13 1" stroke="white" stroke-width="1.5" />
+                    </svg>
+                    <div class="img-container">
+                        <img src="./img/mission/early-icon.svg" alt="" class="polygon-icon">
+                        <img src="./img/mission/border-icon.png" alt="" class="border-icon">
+                        <svg class="mission-icon" width="68" height="76" viewBox="0 0 68 76" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="polygon"
+                                d="M0 22.5204C0 20.3467 1.1756 18.343 3.07307 17.2827L31.0731 1.63563C32.892 0.619181 35.108 0.619184 36.9269 1.63564L64.9269 17.2827C66.8244 18.343 68 20.3467 68 22.5204V53.4796C68 55.6533 66.8244 57.657 64.9269 58.7173L36.9269 74.3644C35.108 75.3808 32.892 75.3808 31.0731 74.3644L3.07307 58.7173C1.1756 57.657 0 55.6533 0 53.4796V22.5204Z"
+                                fill="#13171D" />
+                            <path
+                                d="M6 26.0366C6 23.8543 7.18486 21.8441 9.0941 20.7872L31.0941 8.60862C32.9021 7.60777 35.0979 7.60777 36.9059 8.60862L58.9059 20.7872C60.8151 21.8441 62 23.8543 62 26.0366V49.9634C62 52.1457 60.8151 54.1559 58.9059 55.2128L36.9059 67.3914C35.0979 68.3922 32.9021 68.3922 31.0941 67.3914L9.0941 55.2128C7.18486 54.1559 6 52.1457 6 49.9634V26.0366Z"
+                                fill="#2a2e33" />
+                        </svg>
+                    </div>
+                    <div class="text-container">
+                        <h4 class="accordion-title">Early Engagement in Tokenized
+                            AI Projects</h4>
+                        <p class="accordion-description">At Creon, we deliver a unique opportunity to benefit from a
+                            real AI-based business that generates profits. We believe that through our solutions, every
+                            investor will be able to reap the benefits of the latest achievements in the field of
+                            artificial intelligence.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"
+                        fill="none">
+                        <path d="M1 1L7 7L13 1" stroke="white" stroke-width="1.5" />
+                    </svg>
+                    <div class="img-container">
+                        <img src="./img/mission/limitless-icon.svg" alt="" class="polygon-icon">
+                        <img src="./img/mission/border-icon.png" alt="" class="border-icon">
+                        <svg class="mission-icon" width="68" height="76" viewBox="0 0 68 76" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="polygon"
+                                d="M0 22.5204C0 20.3467 1.1756 18.343 3.07307 17.2827L31.0731 1.63563C32.892 0.619181 35.108 0.619184 36.9269 1.63564L64.9269 17.2827C66.8244 18.343 68 20.3467 68 22.5204V53.4796C68 55.6533 66.8244 57.657 64.9269 58.7173L36.9269 74.3644C35.108 75.3808 32.892 75.3808 31.0731 74.3644L3.07307 58.7173C1.1756 57.657 0 55.6533 0 53.4796V22.5204Z"
+                                fill="#13171D" />
+                            <path
+                                d="M6 26.0366C6 23.8543 7.18486 21.8441 9.0941 20.7872L31.0941 8.60862C32.9021 7.60777 35.0979 7.60777 36.9059 8.60862L58.9059 20.7872C60.8151 21.8441 62 23.8543 62 26.0366V49.9634C62 52.1457 60.8151 54.1559 58.9059 55.2128L36.9059 67.3914C35.0979 68.3922 32.9021 68.3922 31.0941 67.3914L9.0941 55.2128C7.18486 54.1559 6 52.1457 6 49.9634V26.0366Z"
+                                fill="#2a2e33" />
+                        </svg>
+                    </div>
+                    <div class="text-container">
+                        <h4 class="accordion-title">Limitless Possibilities of AI
+                            & Crypto</h4>
+                        <p class="accordion-description">At Creon, we deliver a unique opportunity to benefit from a
+                            real AI-based business that generates profits. We believe that through our solutions, every
+                            investor will be able to reap the benefits of the latest achievements in the field of
+                            artificial intelligence.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="profiting">
+            <h2 class="profiting__title">Profiting Through</h2>
+            <h3 class="profiting__subtitle">AI Innovation & Decentralization</h3>
+            <div class="video-container">
+                <video class="profiting__video" autoplay="" loop="" playsinline="" muted="">
+                    <source src="./img/profit/profit-video.mp4" type="video/mp4">
+                </video>
+                <div class="profiting__text">
+                    <h4 class="text-title">A Dynamic Business Model for Sustainable Growth and Community Engagement</h4>
+                    <p class="text-description">At Creon, we merge AI tools with the crypto and NFT markets, leveraging
+                        a dynamic business model to generate profits. Our commitment to innovation and decentralization
+                        allows us to strengthen our market position and foster a sustainable ecosystem. <br>
+                        We empower our community, ensuring transparency and actively involving NFT holders in our
+                        success.</p>
+                </div>
+            </div>
+        </section>
+        <section class="market">
+            <div class="marcet__item">
+                <div class="text-container">
+                    <h3 class="item-title">AI Prospects, Market Size, and Development Pace</h3>
+                    <p class="item-description">The AI market is one of the most dynamically growing areas of
+                        technology. According to reports, the global AI market is expected to reach $190.61 billion by
+                        2025, with a CAGR (Compound Annual Growth Rate) of 36.6%. The key drivers behind this growth
+                        include advancements in machine learning, increasing demand for big data analytics, and growing
+                        adoption of AI technology across various sectors such as healthcare, finance, and
+                        transportation.</p>
+                </div>
+                <div class="img-container">
+                    <img src="./img/market/image1.png" alt="" class="item-img">
+                </div>
+            </div>
+            <div class="marcet__item">
+                <div class="text-container">
+                    <h3 class="item-title">AI Tools and Market</h3>
+                    <p class="item-description">AI tools refer to the technologies and software that enable computer
+                        systems to perform tasks usually requiring human intellect. The market for these tools is
+                        dynamic and diverse, encompassing areas such as Natural Language Processing (NLP), machine
+                        learning, computer vision, and robotics. With a wide range of applications, AI tools are
+                        becoming increasingly indispensable in many sectors, from healthcare to finance, retail,
+                        manufacturing, and many others.</p>
+                </div>
+                <div class="img-container">
+                    <img src="./img/market/image2.png" alt="" class="item-img">
+                </div>
+            </div>
+            <div class="marcet__item">
+                <div class="text-container">
+                    <h3 class="item-title">AI, Crypto, and NFT Market</h3>
+                    <p class="item-description">Artificial Intelligence and blockchain technology are two groundbreaking
+                        areas leading new technological innovations. The combination of these two technologies creates
+                        intriguing possibilities. For instance, Non-Fungible Tokens (NFTs) can leverage AI to create
+                        unique digital artworks or to provide exclusive AI-based services. Meanwhile, cryptocurrencies
+                        can benefit from AI by improving security mechanisms, transaction efficiency, and service
+                        personalization. Such combination brings substantial benefits for both developers and users,
+                        paving the way for unprecedented possibilities.</p>
+                </div>
+                <div class="img-container">
+                    <img src="./img/market/image3.png" alt="" class="item-img">
+                </div>
+
+            </div>
+        </section>
+        <section class="nft">
+            <div class="nrt__right-block">
+                <h2 class="nft__title">creon pass nft</h2>
+                <h4 class="nft__subtitle">Access to confidential AI tools enabling business optimization and
+                    development. Only NFT holders will have the ability to use a given tool.</h4>
+                <div class="info-container">
+                    <div class="info-item">
+                        <p class="info-text">Prospect to derive financial benefits through the redistributed profit
+                            generated from AI tools, but only when the majority of NFT holders decide to release the
+                            tool publicly.</p>
+                    </div>
+                    <div class="info-item">
+                        <p class="info-text">The possibility of allocating investments into new, exceptional tokenized
+                            AI tools through Creon Launchpad.</p>
+                    </div>
+                    <div class="info-item">
+                        <p class="info-text">Early access to allocations in inspiring tokenized projects, real
+                            businesses based on AI.</p>
+                    </div>
+                </div>
+                <button class="nft__button">
+                    <span>Buy Creon Pass</span>
+                    <span>Buy Creon Pass</span>
+                </button>
+            </div>
+            <div class="video-container">
+                <video class="nft__video" autoplay="" loop="" playsinline="" muted="">
+                    <source src="./img/nft/NFT.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </section>
+        <section class="roadmap">
+            <div class="roadmap__item">
+                <h3 class="item-title">token</h3>
+                <h4 class="item-subtitle">Empowering NFT Holders
+                    and Shaping AI Development</h4>
+                <div class="img-container">
+                    <img src="./img/roadmap/roadmap1.png" alt="" class="roadmap__img">
+                </div>
+                <p class="item-text">Launching in the second half of 2024, the CREON token represents first bridge
+                    between AI tools and blockchain technology, giving NFT holders and token users unprecedented access
+                    and influence.</p>
+            </div>
+            <div class="roadmap__item">
+                <h3 class="item-title">income</h3>
+                <h4 class="item-subtitle">Harnessing AI for Profit <br>
+                    Generation</h4>
+                <div class="img-container">
+                    <img src="./img/roadmap/roadmap2.png" alt="" class="roadmap__img">
+                </div>
+                <p class="item-text">As an integral part of our project, AI Income offers the opportunity to benefit
+                    from a genuine, profit-generating AI-based business. This facet of our initiative leverages the
+                    power of selected exclusive AI tools to create a profit stream.</p>
+            </div>
+            <div class="roadmap__item">
+                <h3 class="item-title">launchpad</h3>
+                <h4 class="item-subtitle">Unlocking Tokenized <br>
+                    AI Projects</h4>
+                <div class="img-container">
+                    <img src="./img/roadmap/roadmap3.png" alt="" class="roadmap__img">
+                </div>
+                <p class="item-text">AI Launchpad, an essential component of our initiative, represents a groundbreaking
+                    opportunity in the realm of AI and blockchain. It provides the first known platform for acquiring
+                    allocations in tokenized AI projects, offering our community of NFT and CREON token holders early
+                    access to innovative and promising AI endeavors.</p>
+            </div>
+           
+
+        </section>
+        <footer class="footer">
+            <div class="footer-left-block">
+                <span class="reserved">© Creon 2023. All rights reserved.</span>
+                <div class="social-container">
+                    <a href="#" class="social">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M13.1396 1.91927L1.32688 6.99655C0.851518 7.23299 0.690736 7.70649 1.21199 7.96346L4.24245 9.0369L11.5697 3.98953C11.9698 3.67267 12.3794 3.75716 12.027 4.10573L5.73381 10.4567L5.53612 13.1445C5.71922 13.5595 6.05448 13.5614 6.26834 13.3551L8.00943 11.5189L10.9913 14.0077C11.6839 14.4647 12.0608 14.1698 12.2098 13.3321L14.1656 3.00957C14.3687 1.97853 14.0224 1.52424 13.1396 1.91927Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M13.2269 2.90705C12.2394 2.42205 11.1946 2.07744 10.1202 1.88232C9.9864 2.13627 9.83005 2.47782 9.72223 2.74955C8.56387 2.56673 7.41617 2.56673 6.27911 2.74955C6.17134 2.47788 6.01146 2.13627 5.8764 1.88232C4.80099 2.07753 3.75532 2.42302 2.76729 2.90958C0.80117 6.0281 0.26817 9.06906 0.53464 12.067C1.8387 13.0891 3.10246 13.7101 4.34493 14.1164C4.65372 13.6707 4.92668 13.1988 5.16099 12.7056C4.71489 12.5274 4.28483 12.3077 3.87593 12.0492C3.98354 11.9655 4.08861 11.8783 4.19099 11.7876C6.66876 13.004 9.36099 13.004 11.8092 11.7876C11.9121 11.8777 12.0171 11.9649 12.1242 12.0492C11.7147 12.3084 11.2838 12.5285 10.8368 12.7069C11.0725 13.2021 11.3449 13.6744 11.6529 14.1176C12.8965 13.7114 14.1615 13.0904 15.4655 12.067C15.7782 8.59167 14.9314 5.57855 13.2269 2.90699V2.90705ZM5.49858 10.2233C4.75476 10.2233 4.14476 9.49446 4.14476 8.60692C4.14476 7.71939 4.74176 6.98929 5.49858 6.98929C6.25546 6.98929 6.8654 7.71809 6.8524 8.60692C6.85358 9.49446 6.25546 10.2233 5.49858 10.2233ZM10.5016 10.2233C9.75775 10.2233 9.14781 9.49446 9.14781 8.60692C9.14781 7.71939 9.74475 6.98929 10.5016 6.98929C11.2585 6.98929 11.8684 7.71809 11.8554 8.60692C11.8554 9.49446 11.2585 10.2233 10.5016 10.2233Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M15.3337 3.42342C14.7943 3.66396 14.2149 3.82649 13.6058 3.89995C14.2343 3.52145 14.7045 2.92574 14.9287 2.22397C14.3382 2.57697 13.6919 2.82545 13.018 2.95859C12.5648 2.47158 11.9645 2.14877 11.3103 2.0403C10.6562 1.93183 9.98471 2.04376 9.40023 2.35871C8.81574 2.67366 8.35092 3.17401 8.07794 3.78209C7.80495 4.39016 7.73907 5.07193 7.89051 5.72154C6.69404 5.66108 5.52356 5.34809 4.45505 4.80288C3.38653 4.25767 2.44386 3.49244 1.68822 2.55683C1.42984 3.0054 1.28128 3.52549 1.28128 4.07938C1.28099 4.578 1.40299 5.069 1.63647 5.50879C1.86994 5.94858 2.20766 6.32357 2.61966 6.60049C2.14185 6.58519 1.67457 6.45524 1.25673 6.22148V6.26048C1.25669 6.95983 1.49704 7.63765 1.93702 8.17894C2.377 8.72023 2.98951 9.09165 3.6706 9.23017C3.22735 9.3509 2.76263 9.36869 2.31155 9.28218C2.50371 9.88392 2.87803 10.4101 3.38211 10.7871C3.88618 11.1641 4.49477 11.373 5.12267 11.3846C4.05677 12.2268 2.74038 12.6836 1.38528 12.6816C1.14523 12.6816 0.905393 12.6675 0.666992 12.6393C2.0425 13.5294 3.64369 14.0018 5.27899 14C10.8147 14 13.8409 9.38554 13.8409 5.38349C13.8409 5.25347 13.8377 5.12215 13.8319 4.99213C14.4205 4.56369 14.9286 4.03315 15.3324 3.42537L15.3337 3.42342Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <a href="https://www.niftables.com/" class="povered" target="_blank">Powered by
+                <svg xmlns="http://www.w3.org/2000/svg" width="101" height="18" viewBox="0 0 101 18" fill="none">
+                    <path
+                        d="M11.2222 14.1177H8.71237L2.4233 5.70415V14.1177H0V2.11768H2.55312L8.79892 10.4973V2.11768H11.2222V14.1177Z"
+                        fill="white" />
+                    <path d="M16.8333 14.1177H14.5889V2.11768H16.8333V14.1177Z" fill="white" />
+                    <path
+                        d="M30.3002 4.27641H22.9223V7.33587H29.8672V9.47749H22.9223V14.1177H20.2002V2.11768H30.3002V4.27641Z"
+                        fill="white" />
+                    <path d="M42.6441 4.31029H38.4659V14.1177H35.6162V4.31029H31.4219V2.11768H42.6441V4.31029Z"
+                        fill="white" />
+                    <path
+                        d="M53.8671 14.1177H50.8128L49.8872 11.857H44.3031L43.3775 14.1177H40.4004L45.6605 2.11768H48.6068L53.8671 14.1177ZM49.0079 9.73244L47.1106 5.04127L45.1823 9.73244H49.0079Z"
+                        fill="white" />
+                    <path
+                        d="M54.9893 2.11768H62.0108C62.4196 2.11768 62.7568 2.12914 63.0226 2.15173C63.2883 2.17432 63.6307 2.26501 64.0498 2.42363C64.4688 2.57095 64.801 2.79767 65.0463 3.10361C65.4551 3.61352 65.6595 4.26495 65.6595 5.05822C65.6595 6.32734 65.0616 7.17725 63.8659 7.60776C65.4194 8.0044 66.2012 9.01292 66.2115 10.6332C66.2115 11.4718 66.053 12.146 65.7362 12.6559C65.5317 12.9959 65.2967 13.2734 65.0309 13.4887C64.7755 13.7041 64.4739 13.8571 64.1264 13.9476C63.7892 14.027 63.5132 14.078 63.2986 14.1006C63.0839 14.112 62.7926 14.1177 62.4247 14.1177H54.9893V2.11768ZM57.6721 6.82596H61.7501C62.6189 6.82596 63.0532 6.38398 63.0532 5.50019C63.0431 4.62769 62.6137 4.19137 61.7655 4.19137H57.6721V6.82596ZM57.6721 12.0099H61.9035C62.9767 12.0099 63.5132 11.4661 63.5132 10.3782C63.5132 9.40375 63.0328 8.91659 62.0721 8.91659H57.6721V12.0099Z"
+                        fill="white" />
+                    <path d="M76.3116 14.1177H68.4561V2.11768H70.8997V11.908H76.3116V14.1177Z" fill="white" />
+                    <path
+                        d="M88.6558 14.1177H77.4336V2.11768H88.3247V4.27641H80.3633V6.97893H88.0599V9.12055H80.3633V11.9761H88.6558V14.1177Z"
+                        fill="white" />
+                    <path
+                        d="M89.7773 10.9337L92.1768 10.2777C92.6934 11.4509 93.8807 12.0377 95.7386 12.0377C95.9474 12.0377 96.161 12.0269 96.3796 12.0057C96.598 11.9736 96.8763 11.915 97.2141 11.8296C97.552 11.7444 97.8251 11.5949 98.0338 11.3817C98.2524 11.1576 98.3617 10.8804 98.3617 10.5497C98.3617 10.4004 98.3368 10.267 98.2871 10.1496C98.2474 10.0324 98.1629 9.93104 98.0338 9.84568C97.9146 9.76031 97.8002 9.69104 97.691 9.63772C97.5916 9.58441 97.4327 9.53094 97.2141 9.47763C96.9955 9.42431 96.8166 9.38694 96.6776 9.36568C96.5485 9.33363 96.3397 9.29641 96.0516 9.25373C95.217 9.11504 94.6358 9.01904 94.308 8.96573C93.9801 8.90163 93.6175 8.81641 93.2199 8.70963C92.8226 8.60299 92.4898 8.48041 92.2215 8.34173C91.1186 7.78699 90.5672 6.89094 90.5672 5.65372C90.5672 4.85367 90.8007 4.18167 91.2677 3.63772C91.7346 3.08299 92.3259 2.69367 93.0412 2.46962C93.7565 2.23494 94.5712 2.11768 95.4853 2.11768C98.2176 2.11768 100.056 3.01904 101 4.82162L98.5107 5.49363C98.0635 4.58694 97.0302 4.13368 95.4108 4.13368C93.8807 4.13368 93.1157 4.57099 93.1157 5.44562C93.1157 5.90436 93.3939 6.22972 93.9503 6.42172C94.1887 6.49631 95.3164 6.72568 97.3334 7.10968C97.7009 7.18441 98.004 7.24836 98.2424 7.30167C98.4809 7.35499 98.7839 7.46162 99.1515 7.62172C99.5291 7.78167 99.8272 7.96836 100.046 8.18162C100.264 8.39504 100.458 8.68836 100.627 9.06173C100.796 9.42431 100.88 9.84568 100.88 10.3257C100.88 12.8537 99.0969 14.1177 95.53 14.1177C94.0397 14.1177 92.8374 13.8564 91.9233 13.3337C91.0193 12.811 90.3039 12.011 89.7773 10.9337Z"
+                        fill="white" />
+                </svg>
+            </a>
+             <div class="video-container">
+                <div class="video-wrapper">
+                <video class="footer__video" autoplay="" loop="" playsinline="" muted="">
+                    <source src="./img/roadmap/footer-video.mp4" type="video/mp4">
+                </video>
+            </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
