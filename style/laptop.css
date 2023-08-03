@@ -44,7 +44,7 @@ html::-webkit-scrollbar-thumb {
 }
 .header .header__logo .logo {
   width: 7.292vw;
-  height: 2.031vw;
+  height: auto;
   fill: var(--white, #fff);
 }
 .header .header__right-block {
@@ -116,6 +116,9 @@ html::-webkit-scrollbar-thumb {
   background: var(--blue, #3d8bff);
   border: 0.104vw solid var(--blue, #fff);
 }
+.header .header__right-block .burger-menu {
+  display: none;
+}
 
 .main {
   position: relative;
@@ -125,10 +128,17 @@ html::-webkit-scrollbar-thumb {
   justify-content: end;
   padding: 0 12.5vw 5.313vw 12.5vw;
 }
-.main .main__bg {
+.main .video-container {
   position: absolute;
   left: 0;
   top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .video-container .main__bg {
   width: 100%;
   height: 100%;
   z-index: 0;
@@ -173,7 +183,6 @@ html::-webkit-scrollbar-thumb {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border-top: 1px solid var(--linear, linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%));
 }
 .main .main__subtitle .border {
   position: absolute;
@@ -312,7 +321,7 @@ html::-webkit-scrollbar-thumb {
   line-height: 130%; /* 1.49vw */
   color: var(--white, #fff);
   padding: 3.021vw 0 0 0;
-  width: 17.5vw;
+  width: auto;
   transition: 0.25s ease-out color;
 }
 .mission .mission__accordion .item .text-container .accordion-description {
@@ -444,6 +453,8 @@ html::-webkit-scrollbar-thumb {
   position: relative;
   width: 23.594vw;
   height: auto;
+  border-radius: 0 0.313vw 0.313vw 0;
+  overflow: hidden;
 }
 .market .marcet__item .img-container .item-img {
   width: 100%;
@@ -470,6 +481,7 @@ html::-webkit-scrollbar-thumb {
   gap: 2.083vw;
   overflow: hidden;
   align-items: center;
+  position: relative;
 }
 .nft .nrt__right-block {
   display: flex;
@@ -589,6 +601,7 @@ html::-webkit-scrollbar-thumb {
   flex-shrink: 0;
   background: var(--black, #000);
   filter: blur(1.563vw);
+  z-index: 1;
 }
 .nft .video-container::after {
   content: "";
@@ -602,12 +615,24 @@ html::-webkit-scrollbar-thumb {
   flex-shrink: 0;
   background: var(--black, #000);
   filter: blur(1.563vw);
+  z-index: 1;
 }
 .nft .video-container .nft__video {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+.nft::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 4.219vw;
+  right: 6.875vw;
+  width: 42.083vw;
+  height: 42.083vw;
+  background: linear-gradient(180deg, rgba(61, 139, 255, 0.44) 0%, #ab23ff 100%);
+  mix-blend-mode: soft-light;
 }
 
 .roadmap {

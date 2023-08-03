@@ -1,1 +1,350 @@
-/*# sourceMappingURL=mobile.css.map */
+@media only screen and (max-width: 600px) {
+  :root {
+    --accordion-height: 32.8vw;
+  }
+  .blur {
+    -webkit-backdrop-filter: blur(1.067vw);
+            backdrop-filter: blur(1.067vw);
+  }
+  .header {
+    padding: 5.333vw 4vw;
+  }
+  .header .header__logo .logo {
+    width: 32vw;
+  }
+  .header .header__right-block {
+    gap: 4vw;
+  }
+  .header .header__right-block .header__nav {
+    padding: 23.467vw 0 8vw 8vw;
+  }
+  .header .header__right-block .header__nav .nav-item {
+    padding: 4vw 8vw 4.8vw 0;
+    border-bottom: 1px solid var(--grey-line, #13171d);
+    width: 47.467vw;
+    gap: 2.133vw;
+  }
+  .header .header__right-block .header__nav .nav-item:first-child {
+    border-top: 1.001px solid var(--grey-line, #13171d);
+  }
+  .header .header__right-block .header__nav .nav-item:not(:first-child)::after {
+    font-size: 2.667vw;
+  }
+  .header .header__right-block .header__nav .nav-item a {
+    font-size: 4.267vw;
+  }
+  .header .header__right-block .header__connect {
+    min-width: 29.333vw;
+    height: 10.133vw;
+    padding: 2.4vw 2.667vw 2.933vw 2.667vw;
+    border: 0.533vw solid var(--white, #fff);
+    border-radius: 1.6vw;
+    font-size: 4.267vw;
+    height: 10.133vw;
+  }
+  .header .header__right-block .header__connect:hover {
+    border: 0.533vw solid var(--blue, #fff);
+  }
+  .header .header__right-block .burger-menu {
+    width: 10.133vw;
+    height: 10.133vw;
+    gap: 1.067vw;
+    border-radius: 1.6vw;
+  }
+  .header .header__right-block .burger-menu .burger-container span {
+    width: 5.333vw;
+    height: 0.533vw;
+  }
+  .header .header__right-block .burger-menu .burger-container span:last-child {
+    transform: translate(-50%, 1.333vw) rotate(0deg);
+  }
+  .header .header__right-block .burger-menu .burger-container span:first-child {
+    transform: translate(-50%, -1.867vw) rotate(0deg);
+  }
+  .main {
+    gap: 5.333vw;
+    padding: 0 4vw 16.267vw 4vw;
+  }
+  .main .main__title {
+    margin: 113.333vw 0 0 0;
+    width: 100%;
+    font-size: 8.533vw;
+  }
+  .main .main__subtitle {
+    padding: 1.867vw 0 2.667vw 0;
+    width: 100%;
+    font-size: 4.267vw;
+  }
+  .main .main__subtitle .border {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .mission {
+    padding: 21.333vw 4vw;
+    gap: 40vw;
+  }
+  .mission .mission-bg {
+    top: 76vw;
+    right: -21.333vw;
+    width: 80.533vw;
+  }
+  .mission .mission__title {
+    font-size: 5.867vw;
+  }
+  .mission .mission__accordion .item {
+    padding: 0 0 5.333vw 0;
+    gap: 5.333vw;
+    height: 32.8vw;
+    width: 100%;
+  }
+  .mission .mission__accordion .item .arrow {
+    width: 3.733vw;
+    top: 11.733vw;
+    right: 5.333vw;
+  }
+  .mission .mission__accordion .item:not(:first-child) {
+    border-top: 1px solid var(--grey-line, #13171d);
+  }
+  .mission .mission__accordion .item:last-child {
+    border-bottom: 1px solid var(--grey-line, #13171d);
+  }
+  .mission .mission__accordion .item .img-container {
+    margin: 5.333vw 0 0 0;
+    width: 19.467vw;
+    height: 22.133vw;
+  }
+  .mission .mission__accordion .item .img-container .polygon-icon {
+    width: 5.867vw;
+  }
+  .mission .mission__accordion .item .img-container .mission-icon {
+    width: 13.6vw;
+    height: 14.667vw;
+  }
+  .mission .mission__accordion .item .text-container {
+    width: 67.2vw;
+  }
+  .mission .mission__accordion .item .text-container .accordion-title {
+    font-size: 4.8vw;
+    padding: 10.667vw 0 0 0;
+  }
+  .mission .mission__accordion .item .text-container .accordion-description {
+    padding: 5.333vw 0;
+    font-size: 4.267vw;
+  }
+  .profiting {
+    padding: 21.333vw 4vw;
+  }
+  .profiting .profiting__title {
+    font-size: 8.533vw;
+  }
+  .profiting .profiting__subtitle {
+    margin: 2.667vw 0 0 16vw;
+    font-size: 5.867vw;
+  }
+  .profiting .video-container {
+    margin: 8vw 0 0 0;
+    gap: 8vw;
+  }
+  .profiting .video-container::before {
+    height: 46.933vw;
+    border-radius: 1.6vw;
+  }
+  .profiting .video-container .profiting__video {
+    height: 46.933vw;
+    border-radius: 1.6vw;
+  }
+  .profiting .video-container .profiting__text {
+    padding: 5.333vw 0;
+    gap: 4vw;
+    border-top: 1px solid var(--grey-line, #13171d);
+    border-bottom: 1px solid var(--grey-line, #13171d);
+  }
+  .profiting .video-container .profiting__text .text-title {
+    font-size: 4.8vw;
+  }
+  .profiting .video-container .profiting__text .text-description {
+    font-size: 4.267vw;
+  }
+  .market {
+    padding: 8vw 4vw;
+    gap: 4vw;
+    flex-direction: row;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+  }
+  .market::-webkit-scrollbar {
+    width: 0;
+  }
+  .market .marcet__item {
+    border-radius: 1.6vw;
+    min-height: 172vw;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .market .marcet__item .text-container {
+    padding: 6.667vw 4.8vw;
+    gap: 2.667vw;
+  }
+  .market .marcet__item .text-container .item-title {
+    font-size: 5.867vw;
+    width: 68.267vw;
+  }
+  .market .marcet__item .text-container .item-description {
+    font-size: 4.267vw;
+  }
+  .market .marcet__item .img-container {
+    width: 100%;
+    border-radius: 1.6vw 1.6vw 0 0;
+  }
+  .nft {
+    padding: 21.333vw 4vw;
+  }
+  .nft .nrt__right-block .nft__title {
+    font-size: 8.533vw;
+    padding: 0 0 5.333vw 0;
+    border-bottom: 1px solid var(--grey-line, #13171d);
+  }
+  .nft .nrt__right-block .nft__subtitle {
+    font-size: 4.8vw;
+    margin: 5.333vw 0 0 0;
+  }
+  .nft .nrt__right-block .info-container {
+    margin: 141.067vw 0 0 0;
+    gap: 4vw;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .nft .nrt__right-block .info-container .info-item {
+    padding: 2.667vw 4.267vw 4.267vw 4.267vw;
+    width: 100%;
+    border-radius: 1.6vw;
+    border: 1px solid var(--grey-line, #13171d);
+  }
+  .nft .nrt__right-block .info-container .info-item:nth-child(2) {
+    width: 44vw;
+  }
+  .nft .nrt__right-block .info-container .info-item:nth-child(3) {
+    width: 44vw;
+  }
+  .nft .nrt__right-block .info-container .info-item .info-text {
+    font-size: 4.267vw;
+  }
+  .nft .nrt__right-block .nft__button {
+    max-height: 12.267vw;
+    padding: 4vw 2.667vw 5.867vw 4vw;
+    border-radius: 1.6vw;
+    font-size: 4.267vw;
+    margin: 8vw 0 0 0;
+    width: 100%;
+  }
+  .nft .nrt__right-block .nft__button span:last-child {
+    transform: translateY(150%);
+  }
+  .nft .nrt__right-block .nft__button span:first-child {
+    transform: translateY(50%);
+  }
+  .nft .nrt__right-block .nft__button:hover span {
+    transform: translateY(-150%);
+  }
+  .nft .nrt__right-block .nft__button:hover span:last-child {
+    transform: translateY(-50%);
+  }
+  .nft .video-container {
+    top: 82.133vw;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 129.333vw;
+    height: 129.333vw;
+  }
+  .nft .video-container::before {
+    width: 206.133vw;
+    height: 21.333vw;
+    filter: blur(4.802vw);
+  }
+  .nft .video-container::after {
+    width: 206.133vw;
+    height: 21.333vw;
+    filter: blur(4.802vw);
+  }
+  .nft::after {
+    top: 82.133vw;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 129.333vw;
+    height: 129.333vw;
+  }
+  .roadmap {
+    padding: 21.333vw 4vw;
+    gap: 4vw;
+  }
+  .roadmap .roadmap__item {
+    width: 77.867vw;
+    padding: 5.333vw 0;
+    border-radius: 1.6vw;
+  }
+  .roadmap .roadmap__item::before {
+    right: 8vw;
+    padding: 0.8vw 1.6vw;
+    border-radius: 26.667vw;
+    font-size: 3.2vw;
+  }
+  .roadmap .item-title {
+    font-size: 5.867vw;
+    margin: 0 5.333vw 0 5.333vw;
+  }
+  .roadmap .item-subtitle {
+    font-size: 4.8vw;
+    margin: 2.667vw 5.333vw 0 5.333vw;
+  }
+  .roadmap .img-container {
+    border-radius: 0 1.6vw 1.6vw 0;
+    border-top: 0.8vw solid var(--black, #000);
+    border-right: 0.8vw solid var(--black, #000);
+    border-bottom: 0.8vw solid var(--black, #000);
+    margin: 5.333vw 0 0 0;
+    width: 72.533vw;
+    height: 62.4vw;
+  }
+  .roadmap .item-text {
+    font-size: 4.267vw;
+    margin: 4.8vw 5.333vw 0 5.333vw;
+  }
+  .footer {
+    padding: 1.867vw 4vw 10.667vw 4vw;
+    flex-direction: column;
+    gap: 4vw;
+  }
+  .footer .footer-left-block {
+    gap: 7.467vw;
+    flex-direction: column-reverse;
+  }
+  .footer .footer-left-block .reserved {
+    font-size: 4.267vw;
+    font-size: 3.733vw;
+  }
+  .footer .footer-left-block .social-container {
+    gap: 2.667vw;
+  }
+  .footer .footer-left-block .social-container .social {
+    width: 9.067vw;
+    height: 9.067vw;
+    border: 0.533vw solid var(--white, #fff);
+  }
+  .footer .footer-left-block .social-container .social svg {
+    width: 4.267vw;
+    height: 4.267vw;
+  }
+  .footer .footer-left-block .social-container .social:hover {
+    border: 0.533vw solid var(--blue, #fff);
+  }
+  .footer .povered {
+    gap: 1.6vw;
+    font-size: 4.267vw;
+    font-size: 3.733vw;
+  }
+  .footer .povered svg {
+    width: 24vw;
+  }
+}/*# sourceMappingURL=mobile.css.map */

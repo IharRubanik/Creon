@@ -1,0 +1,352 @@
+@media only screen and (max-width: 860px) {
+  :root {
+    --accordion-height: 16.016vw;
+  }
+  .blur {
+    -webkit-backdrop-filter: blur(0.521vw);
+            backdrop-filter: blur(0.521vw);
+  }
+  .header {
+    padding: 2.604vw 3.906vw;
+  }
+  .header .header__logo .logo {
+    width: 15.625vw;
+  }
+  .header .header__right-block {
+    gap: 1.953vw;
+  }
+  .header .header__right-block .header__nav {
+    padding: 11.458vw 0 3.906vw 3.906vw;
+  }
+  .header .header__right-block .header__nav .nav-item {
+    padding: 1.953vw 3.906vw 2.344vw 0;
+    border-bottom: 1px solid var(--grey-line, #13171d);
+    width: 25.13vw;
+    gap: 1.042vw;
+  }
+  .header .header__right-block .header__nav .nav-item:first-child {
+    border-top: 1px solid var(--grey-line, #13171d);
+  }
+  .header .header__right-block .header__nav .nav-item:not(:first-child)::after {
+    font-size: 1.302vw;
+  }
+  .header .header__right-block .header__nav .nav-item a {
+    font-size: 2.083vw;
+  }
+  .header .header__right-block .header__connect {
+    min-width: 14.323vw;
+    height: 4.948vw;
+    padding: 1.172vw 1.302vw 1.432vw 1.302vw;
+    border: 0.26vw solid var(--white, #fff);
+    border-radius: 0.781vw;
+    font-size: 2.083vw;
+    height: 4.948vw;
+  }
+  .header .header__right-block .header__connect:hover {
+    border: 0.26vw solid var(--blue, #fff);
+  }
+  .header .header__right-block .burger-menu {
+    width: 4.948vw;
+    height: 4.948vw;
+    gap: 0.521vw;
+    border-radius: 0.781vw;
+  }
+  .header .header__right-block .burger-menu .burger-container span {
+    width: 2.604vw;
+    height: 0.26vw;
+  }
+  .header .header__right-block .burger-menu .burger-container span:last-child {
+    transform: translate(-50%, 0.651vw) rotate(0deg);
+  }
+  .header .header__right-block .burger-menu .burger-container span:first-child {
+    transform: translate(-50%, -0.911vw) rotate(0deg);
+  }
+  .main {
+    gap: 2.604vw;
+    padding: 0 3.906vw 13.021vw 3.906vw;
+  }
+  .main .main__title {
+    margin: 65.885vw 0 0 0;
+    width: 60.547vw;
+    font-size: 5.729vw;
+  }
+  .main .main__subtitle {
+    padding: 0.911vw 0 1.302vw 0;
+    font-size: 2.083vw;
+    border-top: 1px solid var(--linear, linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%));
+  }
+  .mission {
+    padding: 15.365vw 3.906vw;
+    flex-direction: column;
+    gap: 5.208vw;
+  }
+  .mission .mission-bg {
+    left: auto;
+    top: 80.729vw;
+    right: -23.307vw;
+    width: 81.771vw;
+  }
+  .mission .mission__title {
+    font-size: 3.646vw;
+    width: 100%;
+  }
+  .mission .mission__accordion .item {
+    padding: 0 0 2.604vw 0;
+    gap: 2.604vw;
+    height: 16.016vw;
+    width: 61.458vw;
+  }
+  .mission .mission__accordion .item .arrow {
+    width: 1.823vw;
+    top: 5.729vw;
+    right: 2.604vw;
+  }
+  .mission .mission__accordion .item:not(:first-child) {
+    border-top: 1px solid var(--grey-line, #13171d);
+  }
+  .mission .mission__accordion .item:last-child {
+    border-bottom: 1px solid var(--grey-line, #13171d);
+  }
+  .mission .mission__accordion .item .img-container {
+    margin: 2.604vw 0 0 0;
+    width: 9.505vw;
+    height: 10.807vw;
+  }
+  .mission .mission__accordion .item .img-container .polygon-icon {
+    width: 2.865vw;
+  }
+  .mission .mission__accordion .item .img-container .mission-icon {
+    width: 6.641vw;
+    height: 7.161vw;
+  }
+  .mission .mission__accordion .item .text-container {
+    width: 49.349vw;
+  }
+  .mission .mission__accordion .item .text-container .accordion-title {
+    font-size: 2.344vw;
+    padding: 5.208vw 0 0 0;
+  }
+  .mission .mission__accordion .item .text-container .accordion-description {
+    padding: 2.604vw 0;
+    font-size: 2.083vw;
+  }
+  .profiting {
+    padding: 18.88vw 3.906vw;
+  }
+  .profiting .profiting__title {
+    font-size: 5.729vw;
+  }
+  .profiting .profiting__subtitle {
+    margin: 1.302vw 0 0 3.255vw;
+    font-size: 3.646vw;
+  }
+  .profiting .video-container {
+    margin: 5.208vw 0 0 0;
+    flex-direction: column;
+    gap: 3.906vw;
+  }
+  .profiting .video-container::before {
+    width: 100%;
+    height: 47.135vw;
+    border-radius: 0.781vw;
+  }
+  .profiting .video-container .profiting__video {
+    width: 100%;
+    height: 47.135vw;
+    border-radius: 0.781vw;
+  }
+  .profiting .video-container .profiting__text {
+    width: 100%;
+    padding: 3.906vw 0;
+    gap: 2.604vw;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid var(--grey-line, #13171d);
+    border-bottom: 1px solid var(--grey-line, #13171d);
+  }
+  .profiting .video-container .profiting__text .text-title {
+    font-size: 2.344vw;
+  }
+  .profiting .video-container .profiting__text .text-description {
+    font-size: 2.083vw;
+  }
+  .market {
+    padding: 5.208vw 3.906vw;
+    gap: 2.604vw;
+  }
+  .market .marcet__item {
+    border-radius: 0.781vw;
+    min-height: 43.75vw;
+  }
+  .market .marcet__item .text-container {
+    padding: 3.125vw 3.906vw 4.167vw 3.125vw;
+    gap: 1.302vw;
+  }
+  .market .marcet__item .text-container .item-title {
+    font-size: 3.646vw;
+  }
+  .market .marcet__item .text-container .item-description {
+    font-size: 2.083vw;
+  }
+  .market .marcet__item .img-container {
+    width: 29.036vw;
+    border-radius: 0 0.781vw 0.781vw 0;
+  }
+  .nft {
+    padding: 18.229vw 3.906vw 27.214vw 3.906vw;
+    overflow: visible;
+  }
+  .nft .nrt__right-block {
+    width: 100%;
+  }
+  .nft .nrt__right-block .nft__title {
+    font-size: 5.729vw;
+    padding: 0 0 2.604vw 0;
+    border-bottom: 1px solid var(--grey-line, #13171d);
+  }
+  .nft .nrt__right-block .nft__subtitle {
+    font-size: 2.344vw;
+    margin: 2.604vw 0 0 0;
+  }
+  .nft .nrt__right-block .info-container {
+    margin: 3.906vw 0 0 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1.302vw;
+  }
+  .nft .nrt__right-block .info-container .info-item {
+    padding: 1.302vw 2.083vw 2.083vw 2.083vw;
+    width: 30.078vw;
+    border-radius: 0.781vw;
+    border: 1px solid var(--grey-line, #13171d);
+  }
+  .nft .nrt__right-block .info-container .info-item:nth-child(2) {
+    width: 30.078vw;
+  }
+  .nft .nrt__right-block .info-container .info-item:nth-child(3) {
+    width: 30.078vw;
+  }
+  .nft .nrt__right-block .info-container .info-item .info-text {
+    font-size: 2.083vw;
+  }
+  .nft .nrt__right-block .nft__button {
+    max-height: 5.99vw;
+    padding: 1.953vw 1.302vw 2.865vw 1.953vw;
+    border-radius: 0.781vw;
+    font-size: 2.083vw;
+    margin: 3.906vw 0 0 0;
+    width: 30.078vw;
+  }
+  .nft .nrt__right-block .nft__button span:last-child {
+    transform: translateY(150%);
+  }
+  .nft .nrt__right-block .nft__button span:first-child {
+    transform: translateY(50%);
+  }
+  .nft .nrt__right-block .nft__button:hover span {
+    transform: translateY(-150%);
+  }
+  .nft .nrt__right-block .nft__button:hover span:last-child {
+    transform: translateY(-50%);
+  }
+  .nft .video-container {
+    top: 42.969vw;
+    right: -12.63vw;
+    width: 90.365vw;
+    height: 90.365vw;
+  }
+  .nft .video-container::before {
+    width: 144.01vw;
+    height: 14.974vw;
+    filter: blur(3.906vw);
+  }
+  .nft .video-container::after {
+    width: 144.01vw;
+    height: 14.974vw;
+    filter: blur(3.906vw);
+  }
+  .nft::after {
+    top: 42.969vw;
+    right: -12.63vw;
+    width: 90.365vw;
+    height: 90.365vw;
+  }
+  .roadmap {
+    padding: 26.563vw 3.906vw;
+    gap: 2.604vw;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+  }
+  .roadmap::-webkit-scrollbar {
+    width: 0;
+  }
+  .roadmap .roadmap__item {
+    flex-shrink: 0;
+    width: 40.104vw;
+    padding: 2.604vw 0;
+    border-radius: 0.781vw;
+  }
+  .roadmap .roadmap__item::before {
+    right: 3.906vw;
+    top: 0;
+    padding: 0.391vw 0.781vw;
+    border-radius: 13.021vw;
+    font-size: 1.563vw;
+  }
+  .roadmap .item-title {
+    font-size: 3.646vw;
+    margin: 0 2.604vw 0 2.604vw;
+  }
+  .roadmap .item-subtitle {
+    font-size: 2.344vw;
+    margin: 1.302vw 2.604vw 0 2.604vw;
+  }
+  .roadmap .img-container {
+    border-radius: 0 0.781vw 0.781vw 0;
+    border-top: 0.391vw solid var(--black, #000);
+    border-right: 0.391vw solid var(--black, #000);
+    border-bottom: 0.391vw solid var(--black, #000);
+    margin: 2.604vw 0 0 0;
+    width: 37.5vw;
+    height: 30.469vw;
+  }
+  .roadmap .item-text {
+    font-size: 2.083vw;
+    margin: 2.344vw 2.604vw 0 2.604vw;
+  }
+  .footer {
+    padding: 1.953vw 3.906vw 4.557vw 3.906vw;
+  }
+  .footer .footer-left-block {
+    gap: 10.026vw;
+  }
+  .footer .footer-left-block .reserved {
+    font-size: 2.083vw;
+    font-size: 1.823vw;
+  }
+  .footer .footer-left-block .social-container {
+    gap: 1.302vw;
+  }
+  .footer .footer-left-block .social-container .social {
+    width: 4.427vw;
+    height: 4.427vw;
+    border: 0.26vw solid var(--white, #fff);
+  }
+  .footer .footer-left-block .social-container .social svg {
+    width: 2.083vw;
+    height: 2.083vw;
+  }
+  .footer .footer-left-block .social-container .social:hover {
+    border: 0.26vw solid var(--blue, #fff);
+  }
+  .footer .povered {
+    gap: 0.781vw;
+    font-size: 2.083vw;
+    font-size: 1.823vw;
+  }
+  .footer .povered svg {
+    width: 11.719vw;
+  }
+}/*# sourceMappingURL=tablet-vertical.css.map */

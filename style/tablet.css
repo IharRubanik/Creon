@@ -1,247 +1,197 @@
 @media only screen and (max-width: 1280px) and (max-aspect-ratio: 1024/695) {
   :root {
-    --white: #fff;
-    --black: #000;
-    --grey-line: #13171d;
-    --linear: linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%);
-    --blue: #3d8bff;
-    --grey-text: #46505f;
-    --accordion-height: 174px;
+    --accordion-height: 12.012vw;
   }
-  body,
-  html {
-    background: var(--black, #000);
+  .blur {
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgba(20, 19, 19, 0.7);
+    z-index: -1;
+    -webkit-backdrop-filter: blur(0.391vw);
+            backdrop-filter: blur(0.391vw);
+    transition: 0.25s ease-out opacity, 0.25s ease-out height;
+    opacity: 0;
+  }
+  .blur.active {
+    opacity: 1;
   }
   .wrapper {
-    position: relative;
+    overflow: hidden;
   }
   .header {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    padding: 33px 50px;
+    padding: 1.953vw 2.93vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 10;
   }
   .header .header__logo .logo {
-    width: 140px;
-    height: 39px;
-    fill: var(--white, #fff);
+    width: 11.719vw;
   }
   .header .header__right-block {
-    display: flex;
-    gap: 58px;
+    gap: 1.465vw;
   }
   .header .header__right-block .header__nav {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-  }
-  .header .header__right-block .header__nav .nav-item {
-    display: flex;
-    gap: 4px;
-  }
-  .header .header__right-block .header__nav .nav-item:not(:first-child)::after {
-    content: "SHON";
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8.594vw 0 2.93vw 2.93vw;
     background: var(--black, #000);
-    height: -moz-max-content;
-    height: max-content;
-    width: auto;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2px 4px;
-    color: var(--purple, #ab23ff);
-    font-family: Satoshi;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 110%; /* 11px */
-  }
-  .header .header__right-block .header__nav .nav-item a {
-    color: var(--white, #fff);
-    font-family: Satoshi;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 23.4px */
-    font-weight: 700;
-    line-height: 110%;
-    transition: 0.25s ease-out color;
-  }
-  .header .header__right-block .header__nav .nav-item a:hover {
-    color: var(--blue, #3d8bff);
-  }
-  .header .header__right-block .header__connect {
-    min-width: 132px;
-    display: flex;
-    width: auto;
-    height: 44px;
-    padding: 11px 10px 13px 10px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    transition: 0.25s ease-out background, 0.25s ease-out border;
-    border: 2px solid var(--white, #fff);
-    background: none;
-    border-radius: 6px;
-    color: var(--white, #fff);
-    font-family: Satoshi;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 23.4px */
-  }
-  .header .header__right-block .header__connect:hover {
-    background: var(--blue, #3d8bff);
-    border: 2px solid var(--blue, #fff);
-  }
-  .main {
-    position: relative;
-    display: flex;
     flex-direction: column;
-    gap: 40px;
-    justify-content: end;
-    padding: 0 240px 102px 240px;
-  }
-  .main .main__bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .main .video-blur {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    mix-blend-mode: soft-light;
-    z-index: 0;
-  }
-  .main .main__title {
-    z-index: 1;
-    margin: 555px 0 0 0;
-    color: var(--white, #fff);
-    font-family: Monument Extended;
-    font-size: 68px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 74.8px */
-    text-transform: uppercase;
-  }
-  .main .main__subtitle {
-    z-index: 1;
-    position: relative;
-    padding: 7px 0 10px 0;
-    width: -moz-max-content;
-    width: max-content;
-    color: var(--white, #fff);
-    font-family: Satoshi;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 23.4px */
-    background: var(--linear, linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-top: 1px solid var(--linear, linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%));
-  }
-  .main .main__subtitle .border {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .mission {
-    position: relative;
-    padding: 115px 240px 74px 240px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .mission .mission-bg {
-    position: absolute;
-    left: 359px;
-    top: 433px;
-    width: 836px;
-    height: auto;
-  }
-  .mission .mission__title {
-    font-family: Monument Extended;
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 45.6px */
-    text-transform: uppercase;
-    width: 640px;
-    color: var(--white, #fff);
-    z-index: 1;
-  }
-  .mission .mission__title span {
-    background: var(--linear, linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .mission .mission__accordion {
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-  }
-  .mission .mission__accordion .item {
-    position: relative;
-    padding: 0 0 30px 20px;
-    display: flex;
-    gap: 30px;
-    overflow: hidden;
-    transition: 0.25s ease-out height;
-    height: 174px;
-    cursor: pointer;
-  }
-  .mission .mission__accordion .item .arrow {
-    width: 14px;
-    height: auto;
-    position: absolute;
-    top: 63px;
-    right: 22px;
-    transform: scaleY(1);
+    gap: 0vw;
+    align-items: start;
+    height: 100vh;
+    transform: translateX(100%);
     transition: 0.25s ease-out transform;
   }
-  .mission .mission__accordion .item .arrow path {
-    transition: 0.25s ease-out stroke;
+  .header .header__right-block .header__nav .nav-item {
+    padding: 1.465vw 2.93vw 1.758vw 0;
+    border-bottom: 1px solid var(--grey-line, #13171d);
+    width: 18.848vw;
+    gap: 0.781vw;
+  }
+  .header .header__right-block .header__nav .nav-item:first-child {
+    border-top: 1px solid var(--grey-line, #13171d);
+  }
+  .header .header__right-block .header__nav .nav-item:not(:first-child)::after {
+    height: auto;
+    width: auto;
+    border-radius: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 0;
+    font-size: 0.977vw;
+  }
+  .header .header__right-block .header__nav .nav-item a {
+    font-size: 1.563vw;
+  }
+  .header .header__right-block .header__connect {
+    z-index: 20;
+    min-width: 10.742vw;
+    width: -moz-max-content;
+    width: max-content;
+    height: 3.711vw;
+    padding: 0.879vw 0.977vw 1.074vw 0.977vw;
+    border: 0.195vw solid var(--white, #fff);
+    border-radius: 0.586vw;
+    font-size: 1.563vw;
+    height: 3.711vw;
+  }
+  .header .header__right-block .header__connect:hover {
+    border: 0.195vw solid var(--blue, #fff);
+  }
+  .header .header__right-block .burger-menu {
+    padding: 0;
+    box-sizing: border-box;
+    width: 3.711vw;
+    height: 3.711vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.391vw;
+    border-radius: 0.586vw;
+    border: none;
+    outline: 0;
+    background: var(--white, #fff);
+    z-index: 20;
+    transition: 0.25s ease-out background;
+  }
+  .header .header__right-block .burger-menu .burger-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .header .header__right-block .burger-menu .burger-container span {
+    position: absolute;
+    width: 1.953vw;
+    height: 0.195vw;
+    background: var(--black, #000);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.25s ease-out transform, 0.25s ease-out background;
+  }
+  .header .header__right-block .burger-menu .burger-container span:last-child {
+    transform: translate(-50%, 0.488vw) rotate(0deg);
+  }
+  .header .header__right-block .burger-menu .burger-container span:first-child {
+    transform: translate(-50%, -0.684vw) rotate(0deg);
+  }
+  .header.active .header__right-block .header__nav {
+    transform: translateX(0);
+  }
+  .header.active .header__right-block .burger-menu {
+    background: var(--blue, #3d8bff);
+  }
+  .header.active .header__right-block .burger-menu .burger-container span {
+    background: var(--white, #fff);
+  }
+  .header.active .header__right-block .burger-menu .burger-container span:last-child {
+    transform: translate(-50%, 0%) rotate(-45deg);
+  }
+  .header.active .header__right-block .burger-menu .burger-container span:first-child {
+    transform: translate(-50%, 0%) rotate(45deg);
+  }
+  .header.active .header__right-block .burger-menu .burger-container span:nth-child(2) {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  .main {
+    gap: 1.953vw;
+    justify-content: end;
+    padding: 0 2.93vw 6.836vw 2.93vw;
+  }
+  .main .video-container {
+    width: 110%;
+    height: 100%;
+  }
+  .main .main__title {
+    margin: 48.34vw 0 0 0;
+    font-size: 4.297vw;
+  }
+  .main .main__subtitle {
+    padding: 0.684vw 0 0.977vw 0;
+    font-size: 1.563vw;
+  }
+  .mission {
+    padding: 9.277vw 2.93vw 9.375vw 2.93vw;
+  }
+  .mission .mission-bg {
+    left: 0vw;
+    top: 35.547vw;
+    width: 61.328vw;
+  }
+  .mission .mission__title {
+    font-size: 2.734vw;
+    width: 35.645vw;
+  }
+  .mission .mission__accordion .item {
+    padding: 0 0 1.953vw 0;
+    gap: 1.953vw;
+    height: 12.012vw;
+  }
+  .mission .mission__accordion .item .arrow {
+    width: 1.367vw;
+    top: 4.297vw;
+    right: 1.953vw;
   }
   .mission .mission__accordion .item:hover .arrow path {
-    stroke: var(--blue, #3d8bff);
-  }
-  .mission .mission__accordion .item:hover .text-container .accordion-title {
-    color: var(--blue, #3d8bff);
-  }
-  .mission .mission__accordion .item.open .arrow {
-    transform: scaleY(-1);
-  }
-  .mission .mission__accordion .item.open .arrow path {
     stroke: var(--white, #fff);
   }
-  .mission .mission__accordion .item.open .img-container .mission-icon .polygon {
-    fill: var(--white, #fff);
-  }
-  .mission .mission__accordion .item.open .text-container .accordion-description {
-    opacity: 1;
-  }
-  .mission .mission__accordion .item.open:hover .text-container .accordion-title {
+  .mission .mission__accordion .item:hover .text-container .accordion-title {
     color: var(--white, #fff);
+  }
+  .mission .mission__accordion .item.click .arrow path {
+    stroke: var(--blue, #3d8bff) !important;
+  }
+  .mission .mission__accordion .item.click .text-container .accordion-title {
+    color: var(--blue, #3d8bff) !important;
   }
   .mission .mission__accordion .item:not(:first-child) {
     border-top: 1px solid var(--grey-line, #13171d);
@@ -250,297 +200,141 @@
     border-bottom: 1px solid var(--grey-line, #13171d);
   }
   .mission .mission__accordion .item .img-container {
-    margin: 30px 0 0 0;
-    flex-shrink: 0;
-    position: relative;
-    width: 100px;
-    height: 114px;
+    margin: 1.953vw 0 0 0;
+    width: 7.129vw;
+    height: 8.105vw;
   }
   .mission .mission__accordion .item .img-container .polygon-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 26px;
-    height: auto;
-    z-index: 1;
-  }
-  .mission .mission__accordion .item .img-container .border-icon {
-    width: 100%;
-    height: 100%;
+    width: 2.148vw;
   }
   .mission .mission__accordion .item .img-container .mission-icon {
-    position: absolute;
-    width: 68px;
-    height: 76px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .mission .mission__accordion .item .img-container .mission-icon .polygon {
-    transition: 0.25s ease-out fill;
+    width: 4.98vw;
+    height: 5.371vw;
   }
   .mission .mission__accordion .item .text-container {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    width: 422px;
+    width: 37.012vw;
   }
   .mission .mission__accordion .item .text-container .accordion-title {
-    font-family: Satoshi;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 130%; /* 28.6px */
-    color: var(--white, #fff);
-    padding: 58px 0 0 0;
-    width: 336px;
-    transition: 0.25s ease-out color;
+    font-size: 1.758vw;
+    padding: 3.906vw 0 0 0;
   }
   .mission .mission__accordion .item .text-container .accordion-description {
-    padding: 30px 0;
-    width: 100%;
-    opacity: 0;
-    color: var(--white, #fff);
-    font-family: Satoshi;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 23.4px */
-    transition: 0.25s ease-out opacity;
+    padding: 1.953vw 0;
+    font-size: 1.563vw;
   }
   .profiting {
-    padding: 120px 240px 140px 240px;
+    padding: 7.031vw 2.93vw 6.934vw 2.93vw;
   }
   .profiting .profiting__title {
-    color: var(--white, #fff);
-    font-family: Monument Extended;
-    font-size: 68px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 74.8px */
-    text-transform: uppercase;
+    font-size: 4.297vw;
   }
   .profiting .profiting__subtitle {
-    margin: 20px 0 0 515px;
-    font-family: Monument Extended;
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 45.6px */
-    text-transform: uppercase;
-    background: var(--linear, linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin: 0.977vw 0 0 27.539vw;
+    font-size: 2.734vw;
   }
   .profiting .video-container {
-    margin: 83px 0 0 0;
-    display: flex;
-    justify-content: space-between;
+    margin: 3.906vw 0 0 0;
   }
   .profiting .video-container::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 947px;
-    height: 485px;
-    border-radius: 6px;
-    background: linear-gradient(180deg, #3d8bff 0%, #ab23ff 100%);
-    mix-blend-mode: soft-light;
+    width: 62.109vw;
+    height: 48.145vw;
+    border-radius: 0.586vw;
   }
   .profiting .video-container .profiting__video {
-    width: 947px;
-    height: 485px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 6px;
+    width: 62.109vw;
+    height: 48.145vw;
+    border-radius: 0.586vw;
   }
   .profiting .video-container .profiting__text {
-    width: 451px;
-    padding: 0 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 28px;
+    width: 29.883vw;
+    padding: 0 2.344vw;
+    gap: 1.953vw;
     border-left: 1px solid var(--grey-line, #13171d);
     border-right: 1px solid var(--grey-line, #13171d);
   }
   .profiting .video-container .profiting__text .text-title {
-    font-family: Satoshi;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 130%; /* 28.6px */
-    color: var(--white, #fff);
+    font-size: 1.758vw;
   }
   .profiting .video-container .profiting__text .text-description {
-    color: var(--white, #fff);
-    font-family: Satoshi;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 23.4px */
+    font-size: 1.563vw;
   }
   .market {
-    padding: 80px 240px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    padding: 5.859vw 2.93vw 4.98vw 2.93vw;
+    gap: 1.953vw;
   }
   .market .marcet__item {
-    display: flex;
-    border-radius: 6px;
-    background: var(--grey-line, #13171d);
-    min-height: 302px;
+    border-radius: 0.586vw;
+    min-height: 25.391vw;
   }
   .market .marcet__item .text-container {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    padding: 2.344vw 2.93vw 3.125vw 2.344vw;
+    gap: 0.977vw;
   }
   .market .marcet__item .text-container .item-title {
-    font-family: Monument Extended;
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 45.6px */
-    text-transform: uppercase;
-    color: var(--white, #fff);
+    font-size: 2.734vw;
   }
   .market .marcet__item .text-container .item-description {
-    color: var(--white, #fff);
-    font-family: Satoshi;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 23.4px */
+    font-size: 1.563vw;
   }
   .market .marcet__item .img-container {
-    flex-shrink: 0;
-    position: relative;
-    width: 453px;
-    height: auto;
-  }
-  .market .marcet__item .img-container .item-img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    flex-shrink: 0;
-  }
-  .market .marcet__item .img-container::before {
-    display: block;
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: linear-gradient(180deg, #3d6fff 0%, #9123ff 99.28%);
-    mix-blend-mode: overlay;
+    width: 30.078vw;
+    border-radius: 0 0.586vw 0.586vw 0;
   }
   .nft {
-    padding: 81px 132px 81px 240px;
-    display: flex;
-    gap: 40px;
-    overflow: hidden;
-    align-items: center;
+    padding: 11.035vw 2.93vw;
+    display: block;
+    position: relative;
   }
   .nft .nrt__right-block {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
+    width: 46.094vw;
   }
   .nft .nrt__right-block .nft__title {
-    color: var(--white, #fff);
-    font-family: Monument Extended;
-    font-size: 68px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 74.8px */
-    text-transform: uppercase;
-    padding: 0 0 30px 0;
+    font-size: 4.297vw;
+    padding: 0 0 1.953vw 0;
     border-bottom: 1px solid var(--grey-line, #13171d);
   }
   .nft .nrt__right-block .nft__subtitle {
-    font-family: Satoshi;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 130%; /* 28.6px */
-    margin: 30px 0 0 0;
-    background: var(--linear, linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 1.758vw;
+    margin: 1.953vw 0 0 0;
   }
   .nft .nrt__right-block .info-container {
-    margin: 40px 0 0 0;
+    margin: 2.93vw 0 0 0;
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 0.977vw;
   }
   .nft .nrt__right-block .info-container .info-item {
-    padding: 16px 20px 20px 20px;
+    padding: 0.977vw 1.563vw 1.563vw 1.563vw;
     width: 100%;
-    border-radius: 6px;
+    border-radius: 0.586vw;
     border: 1px solid var(--grey-line, #13171d);
-    height: -moz-max-content;
-    height: max-content;
+  }
+  .nft .nrt__right-block .info-container .info-item:nth-child(2) {
+    width: 22.559vw;
+  }
+  .nft .nrt__right-block .info-container .info-item:nth-child(3) {
+    width: 22.559vw;
   }
   .nft .nrt__right-block .info-container .info-item .info-text {
-    color: var(--white, #fff);
-    font-family: Satoshi;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 23.4px */
+    font-size: 1.563vw;
   }
   .nft .nrt__right-block .nft__button {
-    width: auto;
-    height: auto;
-    max-height: 54px;
-    padding: 16px 15px 20px 15px;
-    background: var(--blue, #3d8bff);
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: Satoshi;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 110%;
-    color: var(--white, #fff);
-    border: none;
-    overflow: hidden;
-    position: relative;
-    margin: 40px 0 0 0;
-    width: 460px;
-  }
-  .nft .nrt__right-block .nft__button::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: var(--linear, linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%));
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: 0.25s ease-out opacity;
-  }
-  .nft .nrt__right-block .nft__button span {
-    transition: 0.25s ease-out transform;
+    max-height: 4.492vw;
+    padding: 1.465vw 0.977vw 2.148vw 1.465vw;
+    border-radius: 0.586vw;
+    font-size: 1.563vw;
+    margin: 2.93vw 0 0 0;
+    width: 22.559vw;
   }
   .nft .nrt__right-block .nft__button span:last-child {
     transform: translateY(150%);
   }
   .nft .nrt__right-block .nft__button span:first-child {
     transform: translateY(50%);
-  }
-  .nft .nrt__right-block .nft__button:hover::before {
-    opacity: 0;
   }
   .nft .nrt__right-block .nft__button:hover span {
     transform: translateY(-150%);
@@ -549,233 +343,96 @@
     transform: translateY(-50%);
   }
   .nft .video-container {
-    width: 808px;
-    height: 808px;
-    flex-shrink: 0;
-    position: relative;
+    position: absolute;
+    top: 3.613vw;
+    right: -7.715vw;
+    width: 67.773vw;
+    height: 67.773vw;
   }
   .nft .video-container::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1288px;
-    height: 108px;
-    flex-shrink: 0;
-    background: var(--black, #000);
-    filter: blur(30px);
+    width: 108.008vw;
+    height: 11.23vw;
+    filter: blur(2.93vw);
   }
   .nft .video-container::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    width: 1288px;
-    height: 108px;
-    flex-shrink: 0;
-    background: var(--black, #000);
-    filter: blur(30px);
+    width: 108.008vw;
+    height: 11.23vw;
+    filter: blur(2.93vw);
   }
-  .nft .video-container .nft__video {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-    height: 100%;
+  .nft::after {
+    top: 3.613vw;
+    right: -7.715vw;
+    width: 67.773vw;
+    height: 67.773vw;
   }
   .roadmap {
-    z-index: 1;
-    display: flex;
-    padding: 155px 240px;
-    justify-content: space-between;
-    position: relative;
+    padding: 7.422vw 2.93vw;
   }
   .roadmap .roadmap__item {
-    width: 453px;
-    padding: 30px 0;
-    border-radius: 6px;
-    background: var(--grey-line, #13171d);
-    position: relative;
+    width: 30.078vw;
+    padding: 1.953vw 0;
+    border-radius: 0.586vw;
   }
   .roadmap .roadmap__item::before {
-    content: "COMING SOON";
-    display: flex;
-    position: absolute;
-    right: 30px;
+    right: 2.93vw;
     top: 0;
-    transform: translateY(-50%);
-    padding: 3px 6px;
-    border-radius: 100px;
-    background: var(--white, #fff);
-    color: var(--black, #000);
-    text-align: center;
-    font-family: Satoshi;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 110%;
+    padding: 0.293vw 0.586vw;
+    border-radius: 9.766vw;
+    font-size: 1.172vw;
   }
   .roadmap .item-title {
-    font-family: Monument Extended;
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 45.6px */
-    text-transform: uppercase;
-    color: var(--white, #fff);
-    margin: 0 30px 0 30px;
+    font-size: 2.734vw;
+    margin: 0 1.953vw 0 1.953vw;
   }
   .roadmap .item-subtitle {
-    font-family: Satoshi;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 130%; /* 28.6px */
-    background: var(--linear, linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 15px 30px 0 30px;
+    font-size: 1.758vw;
+    margin: 0.977vw 1.953vw 0 1.953vw;
   }
   .roadmap .img-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 0 6px 6px 0;
-    border-top: 3px solid var(--black, #000);
-    border-right: 3px solid var(--black, #000);
-    border-bottom: 3px solid var(--black, #000);
-    margin: 30px 0 0 0;
-    width: 423px;
-    height: 234px;
-  }
-  .roadmap .img-container::before {
-    display: block;
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: linear-gradient(180deg, #3d6fff 0%, #9123ff 99.28%);
-    mix-blend-mode: color;
-  }
-  .roadmap .img-container .roadmap__img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    mix-blend-mode: luminosity;
-    transition: 0.25s ease-out transform;
-  }
-  .roadmap .img-container:hover .roadmap__img {
-    transform: scale(1.15);
+    border-radius: 0 0.586vw 0.586vw 0;
+    border-top: 0.293vw solid var(--black, #000);
+    border-right: 0.293vw solid var(--black, #000);
+    border-bottom: 0.293vw solid var(--black, #000);
+    margin: 1.953vw 0 0 0;
+    width: 28.125vw;
+    height: 22.852vw;
   }
   .roadmap .item-text {
-    color: var(--white, #fff);
-    font-family: Satoshi;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 23.4px */
-    margin: 28px 30px 0 30px;
+    font-size: 1.563vw;
+    margin: 1.758vw 1.953vw 0 1.953vw;
   }
   .footer {
     position: relative;
-    padding: 15px 240px 35px 240px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 1.465vw 2.93vw 3.418vw 2.93vw;
   }
   .footer .footer-left-block {
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    gap: 90px;
+    gap: 7.52vw;
   }
   .footer .footer-left-block .reserved {
-    color: var(--white, #fff);
-    font-family: Satoshi;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 23.4px */
-    font-size: 16px;
+    font-size: 1.563vw;
+    font-size: 1.367vw;
   }
   .footer .footer-left-block .social-container {
-    display: flex;
-    gap: 10px;
+    gap: 0.977vw;
   }
   .footer .footer-left-block .social-container .social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 34px;
-    height: 34px;
-    flex-shrink: 0;
-    border: 2px solid var(--white, #fff);
-    border-radius: 100%;
-    transition: 0.25s ease-out background, 0.25s ease-out border;
+    width: 3.32vw;
+    height: 3.32vw;
+    border: 0.195vw solid var(--white, #fff);
   }
   .footer .footer-left-block .social-container .social svg {
-    width: 16px;
-    height: 16px;
+    width: 1.563vw;
+    height: 1.563vw;
   }
   .footer .footer-left-block .social-container .social:hover {
-    background: var(--blue, #3d8bff);
-    border: 2px solid var(--blue, #fff);
+    border: 0.195vw solid var(--blue, #fff);
   }
   .footer .povered {
-    z-index: 1;
-    display: flex;
-    gap: 6px;
-    align-items: center;
-    color: var(--white, #fff);
-    font-family: Satoshi;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 23.4px */
-    font-size: 16px;
+    gap: 0.586vw;
+    font-size: 1.563vw;
+    font-size: 1.367vw;
   }
   .footer .povered svg {
-    width: 101px;
-    height: auto;
-  }
-  .footer .povered svg path {
-    transition: 0.25s ease-out fill;
-  }
-  .footer .povered:hover svg path {
-    fill: var(--blue, #3d8bff);
-  }
-  .footer .video-container {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-  }
-  .footer .video-container .video-wrapper {
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  .footer .video-container .video-wrapper .footer__video {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .footer .video-container .video-wrapper::after {
-    content: "";
-    display: block;
-    background-image: url(../img/roadmap/blur-video.png);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 0;
+    width: 8.789vw;
   }
 }/*# sourceMappingURL=tablet.css.map */
