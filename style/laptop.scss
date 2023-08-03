@@ -466,12 +466,13 @@ html {
     @include h2();
   }
   .profiting__subtitle {
-    margin: 1.042vw 0 0 26.823vw;
+    margin: 1.042vw 0 0 26.7vw;
     @include h3();
     background: var(--linear, linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    width: max-content;
   }
   .video-container {
     margin: 4.323vw 0 0 0;

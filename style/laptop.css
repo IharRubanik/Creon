@@ -364,7 +364,7 @@ html::-webkit-scrollbar-thumb {
   text-transform: uppercase;
 }
 .profiting .profiting__subtitle {
-  margin: 1.042vw 0 0 26.823vw;
+  margin: 1.042vw 0 0 26.7vw;
   font-family: Monument Extended;
   font-size: 1.979vw;
   font-style: normal;
@@ -375,6 +375,8 @@ html::-webkit-scrollbar-thumb {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  width: -moz-max-content;
+  width: max-content;
 }
 .profiting .video-container {
   margin: 4.323vw 0 0 0;

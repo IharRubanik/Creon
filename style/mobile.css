@@ -146,6 +146,7 @@
   .profiting .profiting__subtitle {
     margin: 2.667vw 0 0 16vw;
     font-size: 5.867vw;
+    width: auto;
   }
   .profiting .video-container {
     margin: 8vw 0 0 0;

@@ -212,6 +212,7 @@
     .profiting__subtitle {
       margin: 2.667vw 0 0 16vw;
       @include h3();
+      width: auto;
     }
     .video-container {
       margin: 8vw 0 0 0;
