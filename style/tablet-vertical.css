@@ -37,13 +37,13 @@
     min-width: 14.323vw;
     height: 4.948vw;
     padding: 1.172vw 1.302vw 1.432vw 1.302vw;
-    border: 0.26vw solid var(--white, #fff);
+    border: 0.263vw solid var(--white, #fff);
     border-radius: 0.781vw;
     font-size: 2.083vw;
     height: 4.948vw;
   }
   .header .header__right-block .header__connect:hover {
-    border: 0.26vw solid var(--blue, #fff);
+    border: 0.263vw solid var(--blue, #fff);
   }
   .header .header__right-block .burger-menu {
     width: 4.948vw;
@@ -72,8 +72,13 @@
   }
   .main .main__subtitle {
     padding: 0.911vw 0 1.302vw 0;
-    font-size: 2.083vw;
-    border-top: 1px solid var(--linear, linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%));
+    font-size: 2.344vw;
+  }
+  .main .main__subtitle::before {
+    height: 1px;
+  }
+  .main .main__subtitle::after {
+    height: 1px;
   }
   .mission {
     padding: 15.365vw 3.906vw;
@@ -319,6 +324,9 @@
   .footer {
     padding: 1.953vw 3.906vw 4.557vw 3.906vw;
   }
+  .footer .video-container .video-wrapper::after {
+    background-image: url(../img/roadmap/blur-video-tablet2.png);
+  }
   .footer .footer-left-block {
     gap: 10.026vw;
   }
@@ -332,14 +340,14 @@
   .footer .footer-left-block .social-container .social {
     width: 4.427vw;
     height: 4.427vw;
-    border: 0.26vw solid var(--white, #fff);
+    border: 0.263vw solid var(--white, #fff);
   }
   .footer .footer-left-block .social-container .social svg {
     width: 2.083vw;
     height: 2.083vw;
   }
   .footer .footer-left-block .social-container .social:hover {
-    border: 0.26vw solid var(--blue, #fff);
+    border: 0.263vw solid var(--blue, #fff);
   }
   .footer .povered {
     gap: 0.781vw;

@@ -49,23 +49,23 @@
   @mixin button-login {
     height: 4.948vw;
     padding: 1.172vw 1.302vw 1.432vw 1.302vw;
-    border: 0.26vw solid var(--white, #fff);
+    border: 0.263vw solid var(--white, #fff);
     border-radius: 0.781vw;
     @include p();
     &:hover {
-      border: 0.26vw solid var(--blue, #fff);
+      border: 0.263vw solid var(--blue, #fff);
     }
   }
   @mixin social {
     width: 4.427vw;
     height: 4.427vw;
-    border: 0.26vw solid var(--white, #fff);
+    border: 0.263vw solid var(--white, #fff);
     svg {
       width: 2.083vw;
       height: 2.083vw;
     }
     &:hover {
-      border: 0.26vw solid var(--blue, #fff);
+      border: 0.263vw solid var(--blue, #fff);
     }
   }
 
@@ -136,9 +136,13 @@
     }
     .main__subtitle {
       padding: 0.911vw 0 1.302vw 0;
-      @include p();
-      border-top: 1px solid
-        var(--linear, linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%));
+      @include h4();
+      &::before {
+        height: 1px;
+      }
+      &::after{
+          height: 1px;
+      }
     }
   }
   .mission {
@@ -371,6 +375,14 @@
   }
   .footer {
     padding: 1.953vw 3.906vw 4.557vw 3.906vw;
+    .video-container{
+        .video-wrapper{
+            &::after{
+                background-image: url(../img/roadmap/blur-video-tablet2.png);
+            }
+        }
+    }
+
     .footer-left-block {
       gap: 10.026vw;
       .reserved {

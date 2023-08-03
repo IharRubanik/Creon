@@ -49,11 +49,11 @@
   @mixin button-login {
     height: 10.133vw;
     padding: 2.4vw 2.667vw 2.933vw 2.667vw;
-    border: 0.533vw solid var(--white, #fff);
+    border: 0.539vw solid var(--white, #fff);
     border-radius: 1.6vw;
     @include p();
     &:hover {
-      border: 0.533vw solid var(--blue, #fff);
+      border: 0.539vw solid var(--blue, #fff);
     }
   }
   @mixin social {
@@ -137,9 +137,12 @@
     .main__subtitle {
       padding: 1.867vw 0 2.667vw 0;
       width: 100%;
-      @include p();
-      .border {
-        object-fit: cover;
+      @include h4();
+      &::before {
+        height: 1px;
+      }
+      &::after {
+        height: 1px;
       }
     }
   }
@@ -372,6 +375,13 @@
     padding: 1.867vw 4vw 10.667vw 4vw;
     flex-direction: column;
     gap: 4vw;
+    .video-container {
+      .video-wrapper {
+        &::after {
+          background-image: url(../img/roadmap/blur-video-mobile.png);
+        }
+      }
+    }
     .footer-left-block {
       gap: 7.467vw;
       flex-direction: column-reverse;
