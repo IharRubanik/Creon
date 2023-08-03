@@ -188,6 +188,10 @@
           .accordion-title {
             @include h4();
             padding: 10.667vw 0 0 0;
+            width: 57.333vw;
+            br {
+              display: none;
+            }
           }
           .accordion-description {
             padding: 5.333vw 0;
