@@ -237,8 +237,8 @@
     font-size: 4.267vw;
   }
   .nft .nrt__right-block .nft__button {
-    max-height: 12.267vw;
-    padding: 4vw 2.667vw 5.867vw 4vw;
+    height: 12.267vw;
+    padding: 0 2.667vw;
     border-radius: 1.6vw;
     font-size: 4.267vw;
     margin: 8vw 0 0 0;
@@ -278,7 +278,7 @@
     top: 82.133vw;
     right: auto;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) rotate(180deg);
     width: 129.333vw;
     height: 129.333vw;
   }
@@ -292,7 +292,7 @@
     border-radius: 1.6vw;
   }
   .roadmap .roadmap__item::before {
-    right: 8vw;
+    right: 5.333vw;
     padding: 0.8vw 1.6vw;
     border-radius: 26.667vw;
     font-size: 3.2vw;
@@ -322,6 +322,9 @@
     padding: 1.867vw 4vw 10.667vw 4vw;
     flex-direction: column;
     gap: 4vw;
+  }
+  .footer .video-container .video-wrapper .footer__video {
+    height: 103.2vw;
   }
   .footer .video-container .video-wrapper::after {
     background-image: url(../img/roadmap/blur-video-mobile.png);

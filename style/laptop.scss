@@ -42,8 +42,8 @@
 @mixin button {
   width: auto;
   height: auto;
-  max-height: 2.813vw;
-  padding: 0.833vw 0.781vw 1.042vw 0.781vw;
+  height: 2.813vw;
+  padding: 0 0.781vw;
   background: var(--blue, #3d8bff);
   border-radius: 0.313vw;
   display: flex;
@@ -526,7 +526,6 @@ html {
     border-radius: 0.313vw;
     background: var(--grey-line, #13171d);
     min-height: 15.729vw;
-
     .text-container {
       padding: 2.083vw;
       display: flex;
@@ -554,7 +553,7 @@ html {
         flex-shrink: 0;
         mix-blend-mode: luminosity;
       }
-      &::before {
+      &::after {
         display: block;
         content: "";
         width: 100%;
@@ -562,9 +561,8 @@ html {
         position: absolute;
         left: 0;
         top: 0;
-        background: linear-gradient(180deg, #3d6fff 0%, #9123ff 99.28%);
+        background: linear-gradient(0deg, #3d6fff 0%, #9123ff 99.28%);
         mix-blend-mode: overlay;
-        transform: rotate(180deg);
         z-index: 1;
       }
     }

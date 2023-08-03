@@ -481,7 +481,7 @@ html::-webkit-scrollbar-thumb {
   flex-shrink: 0;
   mix-blend-mode: luminosity;
 }
-.market .marcet__item .img-container::before {
+.market .marcet__item .img-container::after {
   display: block;
   content: "";
   width: 100%;
@@ -489,9 +489,8 @@ html::-webkit-scrollbar-thumb {
   position: absolute;
   left: 0;
   top: 0;
-  background: linear-gradient(180deg, #3d6fff 0%, #9123ff 99.28%);
+  background: linear-gradient(0deg, #3d6fff 0%, #9123ff 99.28%);
   mix-blend-mode: overlay;
-  transform: rotate(180deg);
   z-index: 1;
 }
 
@@ -554,8 +553,8 @@ html::-webkit-scrollbar-thumb {
 .nft .nrt__right-block .nft__button {
   width: auto;
   height: auto;
-  max-height: 2.813vw;
-  padding: 0.833vw 0.781vw 1.042vw 0.781vw;
+  height: 2.813vw;
+  padding: 0 0.781vw;
   background: var(--blue, #3d8bff);
   border-radius: 0.313vw;
   display: flex;

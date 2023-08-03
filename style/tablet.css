@@ -329,8 +329,8 @@
     font-size: 1.563vw;
   }
   .nft .nrt__right-block .nft__button {
-    max-height: 4.492vw;
-    padding: 1.465vw 0.977vw 2.148vw 1.465vw;
+    height: 4.492vw;
+    padding: 0 0.977vw;
     border-radius: 0.586vw;
     font-size: 1.563vw;
     margin: 2.93vw 0 0 0;
@@ -380,7 +380,7 @@
     border-radius: 0.586vw;
   }
   .roadmap .roadmap__item::before {
-    right: 2.93vw;
+    right: 1.953vw;
     top: 0;
     padding: 0.293vw 0.586vw;
     border-radius: 9.766vw;

@@ -15,8 +15,8 @@
     font-size: 4.267vw;
   }
   @mixin button {
-    max-height: 12.267vw;
-    padding: 4vw 2.667vw 5.867vw 4vw;
+    height: 12.267vw;
+    padding: 0 2.667vw;
     border-radius: 1.6vw;
     font-size: 4.267vw;
     span {
@@ -331,7 +331,7 @@
       top: 82.133vw;
       right: auto;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translateX(-50%) rotate(180deg);
       width: 129.333vw;
       height: 129.333vw;
     }
@@ -344,7 +344,7 @@
       padding: 5.333vw 0;
       border-radius: 1.6vw;
       &::before {
-        right: 8vw;
+        right: 5.333vw;
         padding: 0.8vw 1.6vw;
         border-radius: 26.667vw;
         font-size: 3.2vw;
@@ -378,6 +378,9 @@
     gap: 4vw;
     .video-container {
       .video-wrapper {
+        .footer__video{
+            height: 103.2vw;
+        }
         &::after {
           background-image: url(../img/roadmap/blur-video-mobile.png);
         }

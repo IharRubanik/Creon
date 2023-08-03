@@ -15,8 +15,8 @@
     font-size: 2.083vw;
   }
   @mixin button {
-    max-height: 5.99vw;
-    padding: 1.953vw 1.302vw 2.865vw 1.953vw;
+    height: 5.99vw;
+    padding: 0 1.302vw;
     border-radius: 0.781vw;
     font-size: 2.083vw;
     span {
@@ -344,7 +344,7 @@
       padding: 2.604vw 0;
       border-radius: 0.781vw;
       &::before {
-        right: 3.906vw;
+        right: 2.604vw;
         top: 0;
         padding: 0.391vw 0.781vw;
         border-radius: 13.021vw;
