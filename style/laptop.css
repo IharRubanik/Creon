@@ -728,9 +728,8 @@ html::-webkit-scrollbar-thumb {
   position: absolute;
   left: 0;
   top: 0;
-  background: linear-gradient(180deg, #3d6fff 0%, #9123ff 99.28%);
+  background: linear-gradient(180deg, #9123FF 0%, #3D6FFF 100%);
   mix-blend-mode: color;
-  transform: rotate(180deg);
 }
 .roadmap .img-container .roadmap__img {
   width: 100%;
