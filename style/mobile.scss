@@ -409,4 +409,144 @@
       }
     }
   }
+  // mint
+  .mint {
+    padding: 28.267vw 4vw 12vw 4vw;
+    .mint__top-block {
+      gap: 5.333vw;
+      flex-direction: column;
+      .title-container {
+        margin: 3.733vw 0 0 0;
+        gap: 3.733vw;
+        .mint__title {
+          @include h2();
+          width: 91.733vw;
+        }
+        .mint__subtitle {
+          @include p();
+          width: 91.733vw;
+        }
+      }
+      .circl-container {
+        width: 40vw;
+        height: 40vw;
+        margin: 0 0 0 auto;
+        .stage-title {
+          top: 3.733vw;
+          left: -14.4vw;
+          @include h4();
+        }
+        .circle-text {
+          @include p();
+          padding: 0.8vw 1.6vw;
+        }
+        .circle {
+          width: 40vw;
+          height: 40vw;
+        }
+      }
+    }
+    .buy {
+      gap: 8vw;
+      width: 91.733vw;
+      margin: 118.133vw 0 0 0;
+      .option {
+        gap: 5.333vw;
+        flex-direction: column;
+        .token {
+          width: 100%;
+          gap: 1.067vw;
+          padding: 0 3.733vw;
+          min-width: auto;
+          height: 10.133vw;
+          border-radius: 1.6vw;
+          @include p();
+        }
+        .quanity {
+          gap: 3.2vw;
+          .minus,
+          .plus,
+          .max {
+            @include p();
+            height: 10.133vw;
+            border-radius: 1.6vw;
+            border: 0.533vw solid var(--grey-line, #13171d);
+            &:hover {
+              border: 0.533vw solid var(--grey-line, #13171d);
+            }
+            &.click{
+              border: 0.533vw solid var(--blue, #3d8bff);
+            }
+          }
+          .minus,
+          .plus {
+            width: 10.133vw;
+            padding: 0;
+            svg {
+              width: 2.667vw;
+              height: auto;
+            }
+          }
+          .max {
+            padding: 0 2.933vw 0.8vw 2.933vw;
+          }
+          .number {
+            @include p();
+            font-size: 6.4vw;
+            margin: 0 1.333vw;
+          }
+        }
+      }
+      .nft-prise,
+      .total-prise {
+        padding: 0 0 2.933vw 0;
+        border-bottom: 1px solid var(--grey-line, #13171d);
+        .text {
+          @include p();
+        }
+        .meaning {
+          @include h4();
+          font-size: 6.4vw;
+        }
+      }
+      .mint-button {
+        @include button();
+        margin: 0;
+      }
+      .button-description {
+        @include p();
+        font-size: 3.733vw;
+        margin: -4.267vw 0 0 0;
+        text-align: center;
+      }
+    }
+    .video-container {
+      top: 172vw;
+      right: auto;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 129.333vw;
+      height: 129.333vw;
+      &::before {
+        width: 206.133vw;
+        height: 21.333vw;
+        filter: blur(18.00742530822754px);
+        border-radius: 206.133vw;
+      }
+      &::after {
+        width: 206.133vw;
+        height: 21.333vw;
+        filter: blur(4.802vw);
+        border-radius: 206.133vw;
+      }
+    }
+    &::after {
+      top: 172vw;
+      right: auto;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 129.333vw;
+      height: 129.333vw;
+    }
+  }
 }

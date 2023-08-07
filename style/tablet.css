@@ -444,4 +444,158 @@
   .footer .povered svg {
     width: 8.789vw;
   }
+  .mint {
+    padding: 9.352vw 2.93vw 5.762vw 2.93vw;
+  }
+  .mint .mint__top-block {
+    gap: 6.055vw;
+  }
+  .mint .mint__top-block .title-container {
+    margin: 2.344vw 0 0 0;
+    gap: 1.953vw;
+  }
+  .mint .mint__top-block .title-container .mint__title {
+    font-size: 4.297vw;
+    width: 40.039vw;
+  }
+  .mint .mint__top-block .title-container .mint__subtitle {
+    font-size: 1.563vw;
+    width: 40.039vw;
+  }
+  .mint .mint__top-block .circl-container {
+    width: 14.648vw;
+    height: 14.648vw;
+  }
+  .mint .mint__top-block .circl-container .stage-title {
+    top: 1.172vw;
+    left: -4.395vw;
+    font-size: 1.758vw;
+  }
+  .mint .mint__top-block .circl-container .circle-text {
+    font-size: 1.563vw;
+    padding: 0.293vw 0.586vw;
+  }
+  .mint .mint__top-block .circl-container .circle {
+    width: 14.648vw;
+    height: 14.648vw;
+  }
+  .mint .buy {
+    gap: 2.93vw;
+    width: 40.039vw;
+    margin: 2.93vw 0 0 0;
+  }
+  .mint .buy .option {
+    gap: 2.734vw;
+  }
+  .mint .buy .option .token {
+    gap: 0.391vw;
+    padding: 0 1.367vw;
+    min-width: 18.652vw;
+    height: 3.711vw;
+    border-radius: 0.586vw;
+    font-size: 1.563vw;
+  }
+  .mint .buy .option .quanity {
+    gap: 1.172vw;
+  }
+  .mint .buy .option .quanity .minus,
+  .mint .buy .option .quanity .plus,
+  .mint .buy .option .quanity .max {
+    font-size: 1.563vw;
+    height: 3.711vw;
+    border-radius: 0.586vw;
+    border: 0.195vw solid var(--grey-line, #13171d);
+  }
+  .mint .buy .option .quanity .minus:hover,
+  .mint .buy .option .quanity .plus:hover,
+  .mint .buy .option .quanity .max:hover {
+    background: none;
+    border: 0.195vw solid var(--grey-line, #13171d);
+  }
+  .mint .buy .option .quanity .minus.click,
+  .mint .buy .option .quanity .plus.click,
+  .mint .buy .option .quanity .max.click {
+    background: var(--blue, #3d8bff);
+    border: 0.195vw solid var(--blue, #3d8bff);
+  }
+  .mint .buy .option .quanity .minus,
+  .mint .buy .option .quanity .plus {
+    width: 3.711vw;
+  }
+  .mint .buy .option .quanity .minus svg,
+  .mint .buy .option .quanity .plus svg {
+    width: 0.977vw;
+    height: auto;
+  }
+  .mint .buy .option .quanity .max {
+    padding: 0 1.074vw 0.293vw 1.074vw;
+  }
+  .mint .buy .option .quanity .number {
+    font-size: 1.563vw;
+    font-size: 2.734vw;
+    margin: 0 0.488vw;
+  }
+  .mint .buy .nft-prise,
+  .mint .buy .total-prise {
+    padding: 0 0 1.074vw 0;
+    border-bottom: 1px solid var(--grey-line, #13171d);
+  }
+  .mint .buy .nft-prise .text,
+  .mint .buy .total-prise .text {
+    font-size: 1.563vw;
+  }
+  .mint .buy .nft-prise .meaning,
+  .mint .buy .total-prise .meaning {
+    font-size: 1.758vw;
+    font-size: 2.734vw;
+  }
+  .mint .buy .mint-button {
+    height: 4.492vw;
+    padding: 0 0.977vw;
+    border-radius: 0.586vw;
+    font-size: 1.563vw;
+    margin: 0 0 0 0;
+    width: 100%;
+  }
+  .mint .buy .mint-button span:last-child {
+    transform: translateY(150%);
+  }
+  .mint .buy .mint-button span:first-child {
+    transform: translateY(50%);
+  }
+  .mint .buy .mint-button:hover span {
+    transform: translateY(-150%);
+  }
+  .mint .buy .mint-button:hover span:last-child {
+    transform: translateY(-50%);
+  }
+  .mint .buy .button-description {
+    font-size: 1.563vw;
+    font-size: 1.367vw;
+    margin: -1.953vw 0 0 0;
+    text-align: center;
+  }
+  .mint .video-container {
+    position: absolute;
+    top: 6.641vw;
+    right: -8.203vw;
+    width: 59.18vw;
+    height: 59.18vw;
+  }
+  .mint .video-container::before {
+    width: 108.008vw;
+    height: 11.23vw;
+    filter: blur(2.93vw);
+  }
+  .mint .video-container::after {
+    width: 108.008vw;
+    height: 11.23vw;
+    filter: blur(2.93vw);
+  }
+  .mint::after {
+    top: 6.641vw;
+    right: -8.203vw;
+    width: 59.18vw;
+    height: 59.18vw;
+  }
 }/*# sourceMappingURL=tablet.css.map */

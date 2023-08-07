@@ -15,7 +15,7 @@
     font-size: 1.563vw;
   }
   @mixin button {
-   height: 4.492vw;
+    height: 4.492vw;
     padding: 0 0.977vw;
     border-radius: 0.586vw;
     font-size: 1.563vw;
@@ -231,8 +231,8 @@
       &::before {
         height: 1px;
       }
-      &::after{
-          height: 1px;
+      &::after {
+        height: 1px;
       }
     }
   }
@@ -480,12 +480,12 @@
   .footer {
     position: relative;
     padding: 1.465vw 2.93vw 3.418vw 2.93vw;
-    .video-container{
-        .video-wrapper{
-            &::after{
-                background-image: url(../img/roadmap/blur-video-tablet.png);
-            }
+    .video-container {
+      .video-wrapper {
+        &::after {
+          background-image: url(../img/roadmap/blur-video-tablet.png);
         }
+      }
     }
     .footer-left-block {
       gap: 7.52vw;
@@ -507,6 +507,139 @@
       svg {
         width: 8.789vw;
       }
+    }
+  }
+  // mint
+  .mint {
+    padding: 9.352vw 2.93vw 5.762vw 2.93vw;
+    .mint__top-block {
+      gap: 6.055vw;
+      .title-container {
+        margin: 2.344vw 0 0 0;
+        gap: 1.953vw;
+        .mint__title {
+          @include h2();
+          width: 40.039vw;
+        }
+        .mint__subtitle {
+          @include p();
+          width: 40.039vw;
+        }
+      }
+      .circl-container {
+        width: 14.648vw;
+        height: 14.648vw;
+        .stage-title {
+          top: 1.172vw;
+          left: -4.395vw;
+          @include h4();
+        }
+        .circle-text {
+          @include p();
+          padding: 0.293vw 0.586vw;
+        }
+        .circle {
+          width: 14.648vw;
+          height: 14.648vw;
+        }
+      }
+    }
+    .buy {
+      gap: 2.93vw;
+      width: 40.039vw;
+      margin: 2.93vw 0 0 0;
+      .option {
+        gap: 2.734vw;
+        .token {
+          gap: 0.391vw;
+          padding: 0 1.367vw;
+          min-width: 18.652vw;
+          height: 3.711vw;
+          border-radius: 0.586vw;
+          @include p();
+        }
+        .quanity {
+          gap: 1.172vw;
+          .minus,
+          .plus,
+          .max {
+            @include p();
+            height: 3.711vw;
+            border-radius: 0.586vw;
+            border: 0.195vw solid var(--grey-line, #13171d);
+            &:hover {
+              background: none;
+              border: 0.195vw solid var(--grey-line, #13171d);
+            }
+            &.click{
+              background: var(--blue, #3d8bff);
+              border: 0.195vw solid var(--blue, #3d8bff);
+            }
+          }
+          .minus,
+          .plus {
+            width: 3.711vw;
+            svg {
+              width: 0.977vw;
+              height: auto;
+            }
+          }
+          .max {
+            padding: 0 1.074vw 0.293vw 1.074vw;
+          }
+          .number {
+            @include p();
+            font-size: 2.734vw;
+            margin: 0 0.488vw;
+          }
+        }
+      }
+      .nft-prise,
+      .total-prise {
+        padding: 0 0 1.074vw 0;
+        border-bottom: 1px solid var(--grey-line, #13171d);
+        .text {
+          @include p();
+        }
+        .meaning {
+          @include h4();
+          font-size: 2.734vw;
+        }
+      }
+      .mint-button {
+        @include button();
+        margin: 0 0 0 0;
+        width: 100%;
+      }
+      .button-description {
+        @include p();
+        font-size: 1.367vw;
+        margin: -1.953vw 0 0 0;
+        text-align: center;
+      }
+    }
+    .video-container {
+      position: absolute;
+      top: 6.641vw;
+      right: -8.203vw;
+      width: 59.18vw;
+      height: 59.18vw;
+      &::before {
+        width: 108.008vw;
+        height: 11.23vw;
+        filter: blur(2.93vw);
+      }
+      &::after {
+        width: 108.008vw;
+        height: 11.23vw;
+        filter: blur(2.93vw);
+      }
+    }
+    &::after {
+      top: 6.641vw;
+      right: -8.203vw;
+      width: 59.18vw;
+      height: 59.18vw;
     }
   }
 }

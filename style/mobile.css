@@ -360,4 +360,165 @@
   .footer .povered svg {
     width: 24vw;
   }
+  .mint {
+    padding: 28.267vw 4vw 12vw 4vw;
+  }
+  .mint .mint__top-block {
+    gap: 5.333vw;
+    flex-direction: column;
+  }
+  .mint .mint__top-block .title-container {
+    margin: 3.733vw 0 0 0;
+    gap: 3.733vw;
+  }
+  .mint .mint__top-block .title-container .mint__title {
+    font-size: 8.533vw;
+    width: 91.733vw;
+  }
+  .mint .mint__top-block .title-container .mint__subtitle {
+    font-size: 4.267vw;
+    width: 91.733vw;
+  }
+  .mint .mint__top-block .circl-container {
+    width: 40vw;
+    height: 40vw;
+    margin: 0 0 0 auto;
+  }
+  .mint .mint__top-block .circl-container .stage-title {
+    top: 3.733vw;
+    left: -14.4vw;
+    font-size: 4.8vw;
+  }
+  .mint .mint__top-block .circl-container .circle-text {
+    font-size: 4.267vw;
+    padding: 0.8vw 1.6vw;
+  }
+  .mint .mint__top-block .circl-container .circle {
+    width: 40vw;
+    height: 40vw;
+  }
+  .mint .buy {
+    gap: 8vw;
+    width: 91.733vw;
+    margin: 118.133vw 0 0 0;
+  }
+  .mint .buy .option {
+    gap: 5.333vw;
+    flex-direction: column;
+  }
+  .mint .buy .option .token {
+    width: 100%;
+    gap: 1.067vw;
+    padding: 0 3.733vw;
+    min-width: auto;
+    height: 10.133vw;
+    border-radius: 1.6vw;
+    font-size: 4.267vw;
+  }
+  .mint .buy .option .quanity {
+    gap: 3.2vw;
+  }
+  .mint .buy .option .quanity .minus,
+  .mint .buy .option .quanity .plus,
+  .mint .buy .option .quanity .max {
+    font-size: 4.267vw;
+    height: 10.133vw;
+    border-radius: 1.6vw;
+    border: 0.533vw solid var(--grey-line, #13171d);
+  }
+  .mint .buy .option .quanity .minus:hover,
+  .mint .buy .option .quanity .plus:hover,
+  .mint .buy .option .quanity .max:hover {
+    border: 0.533vw solid var(--grey-line, #13171d);
+  }
+  .mint .buy .option .quanity .minus.click,
+  .mint .buy .option .quanity .plus.click,
+  .mint .buy .option .quanity .max.click {
+    border: 0.533vw solid var(--blue, #3d8bff);
+  }
+  .mint .buy .option .quanity .minus,
+  .mint .buy .option .quanity .plus {
+    width: 10.133vw;
+    padding: 0;
+  }
+  .mint .buy .option .quanity .minus svg,
+  .mint .buy .option .quanity .plus svg {
+    width: 2.667vw;
+    height: auto;
+  }
+  .mint .buy .option .quanity .max {
+    padding: 0 2.933vw 0.8vw 2.933vw;
+  }
+  .mint .buy .option .quanity .number {
+    font-size: 4.267vw;
+    font-size: 6.4vw;
+    margin: 0 1.333vw;
+  }
+  .mint .buy .nft-prise,
+  .mint .buy .total-prise {
+    padding: 0 0 2.933vw 0;
+    border-bottom: 1px solid var(--grey-line, #13171d);
+  }
+  .mint .buy .nft-prise .text,
+  .mint .buy .total-prise .text {
+    font-size: 4.267vw;
+  }
+  .mint .buy .nft-prise .meaning,
+  .mint .buy .total-prise .meaning {
+    font-size: 4.8vw;
+    font-size: 6.4vw;
+  }
+  .mint .buy .mint-button {
+    height: 12.267vw;
+    padding: 0 2.667vw;
+    border-radius: 1.6vw;
+    font-size: 4.267vw;
+    margin: 0;
+  }
+  .mint .buy .mint-button span:last-child {
+    transform: translateY(150%);
+  }
+  .mint .buy .mint-button span:first-child {
+    transform: translateY(50%);
+  }
+  .mint .buy .mint-button:hover span {
+    transform: translateY(-150%);
+  }
+  .mint .buy .mint-button:hover span:last-child {
+    transform: translateY(-50%);
+  }
+  .mint .buy .button-description {
+    font-size: 4.267vw;
+    font-size: 3.733vw;
+    margin: -4.267vw 0 0 0;
+    text-align: center;
+  }
+  .mint .video-container {
+    top: 172vw;
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 129.333vw;
+    height: 129.333vw;
+  }
+  .mint .video-container::before {
+    width: 206.133vw;
+    height: 21.333vw;
+    filter: blur(18.0074253082px);
+    border-radius: 206.133vw;
+  }
+  .mint .video-container::after {
+    width: 206.133vw;
+    height: 21.333vw;
+    filter: blur(4.802vw);
+    border-radius: 206.133vw;
+  }
+  .mint::after {
+    top: 172vw;
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 129.333vw;
+    height: 129.333vw;
+  }
 }/*# sourceMappingURL=mobile.css.map */
