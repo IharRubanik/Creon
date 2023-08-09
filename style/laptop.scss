@@ -848,32 +848,32 @@ html {
 // mint
 
 .mint {
-  padding: 136px 240px 80px 240px;
+  padding: 7.083vw 12.5vw 4.167vw 12.5vw;
   overflow: hidden;
   position: relative;
   .mint__top-block {
     display: flex;
-    gap: 148px;
+    gap: 7.708vw;
     z-index: 3;
     position: relative;
     .title-container {
-      margin: 24px 0 0 0;
+      margin: 1.25vw 0 0 0;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 1.042vw;
       .mint__title {
         @include h2();
-        width: 493px;
+        width: 25.677vw;
       }
       .mint__subtitle {
         @include p();
-        width: 453px;
+        width: 23.594vw;
       }
     }
     .circl-container {
       position: relative;
-      width: 306px;
-      height: 306px;
+      width: 15.938vw;
+      height: 15.938vw;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -881,19 +881,19 @@ html {
       border-radius: 100%;
       .stage-title {
         position: absolute;
-        top: 24px;
-        left: -45px;
+        top: 1.25vw;
+        left: -2.344vw;
         @include h4();
         color: var(--blue, #3d8bff);
         transition: 0.25s ease-out color, 0.25s ease-out background;
       }
       .circle-text {
         @include p();
-        border-radius: 100px;
+        border-radius: 5.208vw;
         background: var(--white, #fff);
         display: flex;
         justify-content: center;
-        padding: 3px 6px;
+        padding: 0.156vw 0.313vw;
         color: var(--black, #000);
         font-weight: 700;
         line-height: 110%;
@@ -905,8 +905,8 @@ html {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        width: 306px;
-        height: 306px;
+        width: 15.938vw;
+        height: 15.938vw;
         transition: 0.25s ease-out opacity;
         &:nth-child(1) {
           opacity: 1;
@@ -953,20 +953,20 @@ html {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    width: 453px;
+    gap: 2.083vw;
+    width: 23.594vw;
     z-index: 2;
     .option {
       display: flex;
-      gap: 40px;
+      gap: 2.083vw;
       .token {
         display: flex;
         align-items: center;
-        gap: 6px;
-        padding: 0 16px;
-        min-width: 191px;
-        height: 44px;
-        border-radius: 6px;
+        gap: 0.313vw;
+        padding: 0 0.833vw;
+        min-width: 9.948vw;
+        height: 2.292vw;
+        border-radius: 0.313vw;
         background: var(--grey-line, #13171d);
         @include p();
         color: var(--grey-text, #46505f);
@@ -977,41 +977,41 @@ html {
       .quanity {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 0.521vw;
         .minus,
         .plus,
         .max {
           @include p();
-          height: 44px;
+          height: 2.292vw;
           flex-shrink: 0;
           display: flex;
           align-items: center;
           justify-content: center;
           background: none;
-          border-radius: 6px;
-          border: 2px solid var(--grey-line, #13171d);
+          border-radius: 0.313vw;
+          border: 0.104vw solid var(--grey-line, #13171d);
           transition: 0.25s ease-out border, 0.25s ease-out background;
           &:hover {
             background: none;
-            border: 2px solid var(--blue, #3d8bff);
+            border: 0.104vw solid var(--blue, #3d8bff);
             background: var(--blue, #3d8bff);
           }
         }
         .minus,
         .plus {
-          width: 44px;
+          width: 2.292vw;
           svg {
-            width: 12px;
+            width: 0.625vw;
             height: auto;
           }
         }
         .max {
-          padding: 0 13px 3px 13px;
+          padding: 0 0.677vw 0.156vw 0.677vw;
         }
         .number {
           @include p();
-          font-size: 32px;
-          margin: 0 12px;
+          font-size: 1.667vw;
+          margin: 0 0.625vw;
         }
       }
     }
@@ -1019,7 +1019,7 @@ html {
     .total-prise {
       display: flex;
       align-items: center;
-      padding: 0 0 25px 0;
+      padding: 0 0 1.302vw 0;
       justify-content: space-between;
       border-bottom: 1px solid var(--grey-line, #13171d);
       .text {
@@ -1028,32 +1028,31 @@ html {
       .meaning {
         @include h4();
         color: var(--white, #fff);
-        font-size: 32px;
+        font-size: 1.667vw;
         font-weight: 500;
       }
     }
     .mint-button {
       @include button();
-      margin: -20px 0 0 0;
+      margin: -1.042vw 0 0 0;
       width: 100%;
       z-index: 2;
     }
     .button-description {
       @include p();
-      font-size: 16px;
-      color: var(--grey-text, #46505F);
-      margin: -25px 0 0 0;
+      font-size: 0.833vw;
+      color: var(--grey-text, #46505f);
+      margin: -1.302vw 0 0 0;
       text-align: center;
       z-index: 2;
-      
     }
   }
   .video-container {
     position: absolute;
-    right: 65px;
-    top: 100px;
-    width: 42.083vw;
-    height: 42.083vw;
+    right: 7.5vw;
+    top: 5.208vw;
+    width: 38.958vw;
+    height: 38.958vw;
     flex-shrink: 0;
     &::before {
       content: "";
@@ -1062,8 +1061,8 @@ html {
       top: 0;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 67.083vw;
-      height: 5.625vw;
+      width: 62.102vw;
+      height: 6.461vw;
       flex-shrink: 0;
       background: var(--black, #000);
       filter: blur(1.563vw);
@@ -1076,8 +1075,8 @@ html {
       bottom: 0;
       left: 50%;
       transform: translate(-50%, 50%);
-      width: 67.083vw;
-      height: 5.625vw;
+      width: 62.102vw;
+      height: 6.461vw;
       flex-shrink: 0;
       background: var(--black, #000);
       filter: blur(1.563vw);
@@ -1093,10 +1092,10 @@ html {
     content: "";
     position: absolute;
     display: block;
-    top: 4.219vw;
-    right: 6.875vw;
-    width: 42.083vw;
-    height: 42.083vw;
+    right: 7.5vw;
+    top: 5.208vw;
+    width: 38.958vw;
+    height: 38.958vw;
     background: linear-gradient(
       180deg,
       rgba(61, 139, 255, 0.44) 0%,
